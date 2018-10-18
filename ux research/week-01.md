@@ -4,12 +4,12 @@
 
 ## Card Sort Results
 
-    1. [sort 1](https://docs.google.com/document/d/1-jwit8tKcCYkAF-SWceOQN7GLv6KriDV2XJsFh_P_5Y/edit)
-    2. [sort 2](https://drive.google.com/file/d/1RcZTd3zZNZQhY1kD7SnkFCyFrOeD9OsY/view?usp=sharing)
-    3. [sort 3] (https://drive.google.com/file/d/1IUysswdv29VlHeLwNPtvwi7OjiudgNH9/view?usp=sharing)
-    4. [sort 4](https://drive.google.com/file/d/1ePQemnAADxOnZ3aRlNH5T7nKJbkCXcFK/view?usp=sharing)
-    5. [sort 5](https://drive.google.com/file/d/14YHsJIDZT2iZmFt8ppCH7Z-oOYSFKcjA/view?usp=sharing)
-    6. [sort 6](https://drive.google.com/file/d/118DP-6s-QWDd8KnVIC6rf__dSQVSqZXw/view?usp=sharing)
+    * [sort 1](https://docs.google.com/document/d/1-jwit8tKcCYkAF-SWceOQN7GLv6KriDV2XJsFh_P_5Y/edit)
+    * [sort 2](https://drive.google.com/file/d/1RcZTd3zZNZQhY1kD7SnkFCyFrOeD9OsY/view?usp=sharing)
+    * [sort 3](https://drive.google.com/file/d/1IUysswdv29VlHeLwNPtvwi7OjiudgNH9/view?usp=sharing)
+    * [sort 4](https://drive.google.com/file/d/1ePQemnAADxOnZ3aRlNH5T7nKJbkCXcFK/view?usp=sharing)
+    * [sort 5](https://drive.google.com/file/d/14YHsJIDZT2iZmFt8ppCH7Z-oOYSFKcjA/view?usp=sharing)
+    * [sort 6](https://drive.google.com/file/d/118DP-6s-QWDd8KnVIC6rf__dSQVSqZXw/view?usp=sharing)
    
 
 
