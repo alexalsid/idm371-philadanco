@@ -1,0 +1,93 @@
+
+.menu-open {
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {width: 40%;
+max-width: 200px;}
+
+#burger {margin: 10px;}
+
+
+
+.menu {
+    position: absolute;
+    height: 100vh;
+    width: 85%;
+    background-color: white;
+    top: 0;
+    left: -100%;
+    overflow-x: hidden;
+}
+
+nav ul {padding: 40px;}
+
+nav a {color: black;
+    @include fluid-type($min-vw, $max-vw, $mod_1* $mod_1 * $min-font-size, $mod_2 * $mod_2 * $max-font-size);
+    }
+nav p {text-align: right;
+font-size: 1.2em;}
+
+nav li {padding: 20px;}
+
+//.nav class is bug fix
+.nav li::before {display: none;}
+
+.open {
+    animation: open-menu .7s forwards;
+}
+
+.close {
+    animation: close-menu .7s forwards;
+}
+
+//animations 
+@keyframes close-menu {
+    from {left: 0%;}
+    to {left: -100%;}
+}
+
+@keyframes open-menu {
+    from {left: -100%;}
+    to {left: 0%;}
+}
+
+
+
+@media screen and (min-width: 60rem) {
+
+
+
+    .menu {position: static;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+    
+        
+    }
+
+    .menu ul {padding: 0;}
+
+    .menu a {display: inline-block;
+
+    @include fluid-type($min-vw, $max-vw, $mod_1 * $min-font-size, $mod_2 *  $max-font-size);
+    }
+
+    nav p {display: none;}
+
+    #burger {display: none;}
+
+    
+
+
+
+}
+
+
+
+

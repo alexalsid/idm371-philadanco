@@ -1,0 +1,391 @@
+//margin stuff
+
+.container {margin-top: 10px;}
+
+main {margin: 15px;
+max-width: 122.5rem;}
+
+@media screen and (min-width: 31.25rem) {
+    main {margin: 30px;}
+}
+
+@media screen and (min-width: 56.25rem) {
+    main {margin: 40px;}
+}
+
+@media screen and (min-width: 122rem) {
+    main {margin: 40px auto;}
+}
+
+
+// COLORS
+//purples
+$darkpurple: rgba(44,0,87,1);
+$darkpurple-2: rgba(71, 0, 120, 1);
+$darkpurple-3: rgba(100, 0, 141, 1);
+$purple: rgba(121, 39, 161, 1);
+$purple-2: rgba(158, 82, 189, 1);
+$lightpurple: rgba(163, 102, 187, 1);
+$lightpurple-2: rgba(151, 62, 186, 1);
+//yellows
+$darkyellow: rgba(255, 116, 0, 1);
+$orangeyellow: rgba(255, 137, 0, 1);
+$orangeyellow-2: rgba(255, 168, 0, 1);
+$yellow: rgba(255, 210, 0, 1);
+$lightyellow: rgba(255, 237, 86, 1);
+//greys
+$darkgrey: rgba(17, 17, 17, 1);
+$grey-2: rgba(51, 51, 51, .8);
+$grey: rgba(153, 153, 153, 1);
+$lightgrey: rgba(238, 238, 238, 1);
+
+//TYPE
+$min-vw: 300px;
+$max-vw: 1920px;
+$min-font-size: 16px;
+$max-font-size: 18px;
+
+//fluid type size
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+    $font-calc: $min-font-size;
+    font-size: $font-calc;
+    
+    
+    
+      
+      @media screen and (min-width: $min-vw) {
+        $font-calc: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        font-size: $font-calc
+
+       
+
+      }
+      @media screen and (min-width: $max-vw) {
+        $font-calc: $max-font-size;
+        font-size: $font-calc;
+        
+      }
+
+      @if $font-calc <= 18px {
+    line-height: $font-calc *2;}
+      
+    }
+  }
+
+  
+};
+
+
+
+//font families
+//Alegreya
+$alegreya: 'Alegreya', serif;
+//Avenir Next Condensed
+$avenircon: 'Avenir Next Condensed', 'Avenir Next', Avenir, san-serif;
+$avenir: 'Avenir Next', Avenir, san-serif;
+
+
+
+
+
+//differences between headers
+$mod_1: 1.1; // mobile
+$mod_2: 1.35; // desktop
+
+h1, h2, h3, h4 {max-width: 30ch;}
+
+
+h1 {
+   font-size: $mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min-vw, $max-vw, $mod_1*$mod_1*$mod_1*$mod_1 *$min-font-size, $mod_2*$mod_2*$mod_2*$mod_2 *$max-font-size);
+    font-family: $alegreya;
+    font-weight: 400;
+}
+
+h2 {font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+    @include fluid-type($min-vw, $max-vw, $mod_1*$mod_1*$mod_1 *$min-font-size, $mod_2*$mod_2*$mod_2 *$max-font-size);
+    font-family: $alegreya;
+    font-weight: 400;
+}
+
+h3 {font-size: $mod_1*$mod_1*$mod_1 *1rem; 
+    @include fluid-type($min-vw, $max-vw, $mod_1*$mod_1 *$min-font-size, $mod_2*$mod_2 *$max-font-size);
+    font-family: $alegreya;
+    font-weight: 400;}
+
+h4 {font-size: $mod_1*$mod_1*1rem; 
+@include fluid-type($min-vw, $max-vw, $mod_1 *$min-font-size, $mod_2 *$max-font-size);
+font-family: $alegreya;
+font-weight: 400;}
+
+figcaption {font-size: $mod_1*1rem; 
+@include fluid-type($min-vw, $max-vw, $mod_1 *$min-font-size, $mod_2 *$max-font-size);
+font-family: $avenircon;
+font-weight: 400;
+max-width: 40ch;}
+
+p {font-size: 1em; 
+@include fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size);
+font-family: $avenir;
+font-weight: 400;
+max-width: 85ch;}
+
+blockquote {
+font-size: 1em; 
+@include fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size);
+font-family: $avenircon;
+font-weight: 600;
+font-style: italic;
+border-left: solid $orangeyellow 4px;
+margin-left: 10ch;
+padding-left: 2ch;
+max-width: 85ch;
+}
+
+
+
+
+
+//BUTTONS
+$btn-bradius: 12px;
+$btn-transition: all .3s;
+$btn-width: 120px;
+$btn-height: 50px;
+
+
+button {transition: $btn-transition;
+font-family: $avenir;
+font-weight: 500;
+font-size: 1em;
+height: $btn-height;
+width: $btn-width;
+border-radius: $btn-bradius;
+text-transform: uppercase;
+border: none;}
+
+button.purple{
+    background-color: $darkpurple-2;
+    color: white;
+}
+ button.purple:hover {
+    background-color: $purple;
+}
+button.purple:focus {
+    background-color: $darkpurple;
+}
+
+button.yellow{
+    background-color: $yellow;
+    color: white;
+}
+ button.yellow:hover {
+    background-color: $lightyellow;
+}
+button.yellow:focus {
+    background-color: $orangeyellow-2;
+}
+
+button.white{
+    background-color: transparent;
+    color: black;
+    border: solid 2px $darkpurple-2;
+
+}
+ button.white:hover {
+    background-color: $purple;
+    border-color: $purple;
+    color: white;
+}
+button.white:focus {
+    background-color: $darkpurple-2;
+    border-color: $darkpurple;
+    color: white;
+}
+
+
+
+
+
+//forms
+
+$form-transition: all .3s;
+
+
+input, textarea, .checkmark {transition: $form-transition;}
+
+
+input[type="text"], textarea {
+    background-color: $lightgrey;
+    border: none;
+    border-radius: 5px;
+    font-family: $avenir;
+    font-weight: 500;
+    width: 70%;
+    max-width: 425px;
+    padding: 10px;
+    border: solid 1px rgba(17, 17, 17, 0);
+    display: block;
+}
+
+input[type="text"]:hover, textarea:hover  {
+   opacity: .7;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border: solid 1px rgba(17, 17, 17, 1);
+    outline: none;
+}
+
+.check-container {
+      display: block;
+  position: relative;
+    cursor: pointer;
+ -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 50px;
+  padding: 5px 0 0 35px;
+}
+
+label {font-size: 1.3em;
+font-family: $avenir;}
+
+.check-container input { 
+    display: block;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    z-index: 1;
+}
+
+.checkmark, .radio {
+position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: solid 1px $grey;
+  border-radius: 50%;
+}
+
+.checkmark {
+
+  border-radius: 4px;
+  }
+
+  .check-container:hover input ~ .checkmark, .check-container:hover input ~ .radio {
+    border: solid 1px $purple;
+    }
+
+.checkmark::after, .radio::after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+}
+
+.check-container input:checked  {
+   border: solid 1px $purple;
+}
+
+.check-container input:checked ~ .checkmark:after {
+  opacity: 1;
+}
+
+
+.check-container .checkmark::after,  {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+}
+
+.check-container .radio::after {
+box-sizing: border-box;
+ left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: $purple;
+  border-radius: 50%;
+  border: solid 6px white;
+}
+
+//lists
+
+ul, ol {font-family: $avenir;
+font-weight: 600;
+font-size: 1.5em;
+line-height: 2;
+color: $darkgrey;}
+
+ul li::before {
+    display: inline;
+    box-sizing: border-box;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: $grey-2;
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 4px white;
+    margin-right: 15px;
+}
+
+
+@for $i from 1 through 4 {
+	ol li:nth-child(n+#{$i})::before {
+        content: '#{$i}.';
+        font-size: 1.5em;
+        padding-right: 9px;
+        color: $grey-2;
+        line-height: 0;
+	}
+};
+
+//links
+
+a {font-family: $avenir;
+font-weight: 600;
+color: $orangeyellow;
+transition: $btn-transition;
+@include fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size);
+
+text-decoration: none;
+    &:hover {
+        color: $yellow;
+       font-style: italic;
+      
+    }
+    &:visited {
+        color: $darkgrey;
+    }
+
+}
+
+
+
+
+
