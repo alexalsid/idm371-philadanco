@@ -6,11 +6,8 @@ const sass = require('gulp-sass');
 //const browserSync = require('browser-sync');
 //const pump = require('pump');
 
-gulp.task("default", function () {
-    gulp.start("sass")
-    .pipe.gulp.start("move");
-    
-});
+
+
 
 
 gulp.task('sass', function () {
@@ -85,6 +82,13 @@ gulp.task("move", function () {
  
 
 } );
+
+
+
+gulp.task('watch', function () {
+    gulp.watch('alpha/src/scss/**/*.scss', gulp.series('sass'));
+  
+});
 
 
 
