@@ -7,8 +7,8 @@ const sass = require('gulp-sass');
 //const pump = require('pump');
 
 gulp.task("default", function () {
-    gulp.start("sass");
-    gulp.start("move");
+    gulp.start("sass")
+    .pipe.gulp.start("move");
     
 });
 
