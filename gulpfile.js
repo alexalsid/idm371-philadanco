@@ -1,67 +1,94 @@
 //packages
-const autoprefixer = require('gulp-autoprefixer');
-const babel = require('gulp-babel');
 const gulp = require('gulp');
-const gulpif = require('gulp-if');
 const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
-const stripDebug = require('gulp-strip-debug-arbitrary');
-const uglify = require('gulp-uglify');
-const browserSync = require('browser-sync');
-const reload = browserSync.reload;
-const pump = require('pump');
+//const sourcemaps = require('gulp-sourcemaps');
+//const uglify = require('gulp-uglify');
+//const browserSync = require('browser-sync');
+//const pump = require('pump');
 
-
-gulp.task('default', ['styles-refresh', 'html', 'watch']);
-
-// compile sass but in alpha and wordpress locations
-
-gulp.task('styles-refresh', () => {
-    return gulp.src('./alpha/src/scss/*.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./alpha/build/css/'))
-        .pipe(gulp.dest('./wordpress/wp-content/themes/philadanco/dist/css/'))
-        .pipe(browserSync.stream());
-
+gulp.task("default", function () {
+    gulp.start("sass");
+    gulp.start("move");
+    
 });
 
-//html 
 
-gulp.task('html', () => {
-    return gulp.src('./src/*.html')
-        .pipe(gulp.dest('./build/'));
+gulp.task('sass', function () {
+    gulp.src('alpha/src/scss/home.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('alpha/build/css'));
+
+    gulp.src('alpha/src/scss/d2.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('alpha/build/css'));
+
+    gulp.src('alpha/src/scss/donate.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('alpha/build/css'));
+
+    gulp.src('alpha/src/scss/education.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('alpha/build/css'));
+
+    gulp.src('alpha/src/scss/meet-philadanco.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('alpha/build/css'));
+
+    gulp.src('alpha/src/scss/events.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('alpha/build/css'));
+
+    gulp.src('alpha/src/scss/about.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('alpha/build/css'));
+
+    return gulp.src('alpha/src/scss/main.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('alpha/build/css'));
 });
 
-//minify js
 
-gulp.task('compress', function (cb) {
-    pump([
-        gulp.src('./alpha/src/js/*.js'),
-        uglify(),
-        gulp.dest('./alpha/build/js/')
-    ],
-        cb
-    );
-});
+gulp.task("move", function () { 
 
-// watch
+    gulp.src('alpha/src/scss/home.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('wordpress/wp-content/themes/philadanco/dist/css'));
 
-gulp.task('watch', ['styles-refresh', 'html', 'compress'], () => {
+    gulp.src('alpha/src/scss/d2.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('wordpress/wp-content/themes/philadanco/dist/css'));
 
-    browserSync.init({
+    gulp.src('alpha/src/scss/donate.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('wordpress/wp-content/themes/philadanco/dist/css'));
 
-        server: {
-            baseDir: 'dist'
-        }
-    })
+    gulp.src('alpha/src/scss/education.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('wordpress/wp-content/themes/philadanco/dist/css'));
 
-    gulp.watch('src/stylus/screen.styl', ['styles-refresh']);
+    gulp.src('alpha/src/scss/meet-philadanco.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('wordpress/wp-content/themes/philadanco/dist/css'));
+
+    gulp.src('alpha/src/scss/events.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('wordpress/wp-content/themes/philadanco/dist/css'));
+
+    gulp.src('alpha/src/scss/about.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('wordpress/wp-content/themes/philadanco/dist/css'));
+
+    return gulp.src('alpha/src/scss/main.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('wordpress/wp-content/themes/philadanco/dist/css'));
+
+ 
+
+} );
 
 
 
-});
+
 
 
 

@@ -4,6 +4,10 @@
 }
 
 nav {
+    position: fixed;
+    height: 70px;
+    background-color: white;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -11,7 +15,7 @@ nav {
 #logo {width: 40%;
 max-width: 200px;}
 
-#burger {margin: 10px;}
+#burger {margin: 20px;}
 
 
 
@@ -87,6 +91,20 @@ nav li {padding: 20px;}
 
 
 }
+
+
+
+header img {
+    display: block;
+width: 100%;}
+
+header h1 {text-align: center;
+transform: translateY(-4ch);
+color: white;}
+
+
+
+
 
 
 

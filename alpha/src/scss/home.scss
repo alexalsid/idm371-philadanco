@@ -1,0 +1,38 @@
+
+h1, h2, h3, h4, h5 {text-align: center;}
+
+input {margin: 0 auto;}
+
+button {
+
+    display: block;
+    margin: 20px auto;}
+
+.circle {height: 300px;
+width: 300px;
+border-radius: 50%;
+background-color: black;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr;
+color: white;
+justify-items: center;
+margin: 20px auto;
+overflow: hidden;}
+
+.circle-img {
+height: 100%;
+width: 100%;}
+
+.circle-img img {
+    height: 100%;
+}
+
+.circle-info {height: 100%;
+width: 100%;
+padding: 10px;
+border-top-left-radius: 25%; 
+border-top-right-radius: 25%; 
+}
+
+
