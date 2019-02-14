@@ -3,3 +3,68 @@ margin: 20px auto;}
 
 main img {width: 100%;}
 
+@mixin flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+}
+
+header {
+	background-image: linear-gradient(black, white);
+}
+
+@media (min-width: 768px) {
+	.display_flex {
+		display: flex;
+		flex-direction: row;
+	}
+	.overlap {
+		position: absolute;
+		top: 20%;
+		width: 100%;
+	}
+	.info {
+		max-width: 50%;
+		color: white;
+	}
+	.form {
+		min-width: 50%;
+	}
+	.mission_content {
+		@include flex;
+		p {
+			margin: 2%;
+		}
+	}
+
+	.support_content {
+		@include flex;
+		flex-direction: row-reverse;
+		p {
+			margin: 2%;
+		}
+
+	}
+
+	.icons {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 1%;
+		grid-row-gap: 1%;
+	}
+
+}
+
+@media (min-width: 1024px) {
+	.overlap {
+		top: 45%;
+	}
+	.icons {
+		display: row;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-column-gap: 1%;
+		grid-row-gap: 3%;
+	}
+
+}
