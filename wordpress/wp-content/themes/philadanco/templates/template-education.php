@@ -1,10 +1,11 @@
 
+<?php 
+
 /*
 Template Name: education
 */
 
-
-<?php get_header(); ?>
+get_header(); ?>
 
 
    <main>

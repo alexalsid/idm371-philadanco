@@ -1,9 +1,12 @@
 
+<?php 
+
 /*
 Template Name: meet the team
 */
 
-<?php get_header(); ?>
+
+get_header(); ?>
 
 <main>
         <div class="top">
@@ -24,35 +27,60 @@ Template Name: meet the team
 
         </div>
         <div class="dancers">
-            <div class="bio-card card">
-                <h2>Dancer Name</h2>
-                <h4>New York, NY</h4>
-                <img src='https://placehold.it/200x400' alt=''/>
+        
+            <?php
+
+// check if the repeater field has rows of data
+if( have_rows('dancers') ):
+
+ 	// loop through the rows of data
+    while ( have_rows('dancers') ) : the_row(); ?>
+
+    <div class="bio-card card">
+                <h2><?php the_sub_field('dancer_name'); ?></h2>
+                <h4><?php the_sub_field('dancer_home'); ?></h4>
+                <img src='<?php the_sub_field('dancer_image'); ?>' alt='' />
                 <button class="card-scroll-btn"></button>
     
             </div>
 
-            <div class="bio-card card">
-                <h2>Dancer Name</h2>
-                <h4>New York, NY</h4>
-                <img src='https://placehold.it/200x400' alt='' />
-                <button class="card-scroll-btn"></button>
+        
+
+    <?php endwhile; ?>
+
+<?php else : ?>
+
+    // no rows found
+
+<?php endif; ?>
+
+
             
-            </div>
 
         </div>
         <div class="bod card">
-            <div class="director-info">
-                <h3>Beverly A. Harper</h3>
-                <h4>President</h4>
-                <h5>President, Portfolio Associates, Inc</h5>
-            </div>
+<?php
+        // check if the repeater field has rows of data
+if( have_rows('dancers') ):
+
+ 	// loop through the rows of data
+    while ( have_rows('dancers') ) : the_row(); ?>
 
             <div class="director-info">
-                <h3>Beverly A. Harper</h3>
-                <h4>President</h4>
-                <h5>President, Portfolio Associates, Inc</h5>
+                <h3><?php the_sub_field('bod_name'); ?></h3>
+                <h4><?php the_sub_field('bod_role'); ?></h4>
+                <h5><?php the_sub_field('bod_company'); ?></h5>
             </div>
+
+
+    <?php endwhile; ?>
+
+<?php else : ?>
+
+    // no rows found
+
+<?php endif; ?>
+
         </div>
 
     </main>

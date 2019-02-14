@@ -1,9 +1,14 @@
+
+
+
+<?php 
+
 /*
 Template Name: d2/d3
 */
 
 
-<?php get_header(); ?>
+get_header(); ?>
 
     <main>
 

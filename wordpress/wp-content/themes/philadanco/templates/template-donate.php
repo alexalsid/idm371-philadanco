@@ -1,10 +1,14 @@
 
+
+
+
+<?php 
+
 /*
 Template Name: donate
 */
 
-
-<?php get_header(); ?>
+get_header(); ?>
 
 
 
