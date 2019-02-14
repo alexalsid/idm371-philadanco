@@ -1481,6 +1481,86 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/build/css/about.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/build/css/about-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/build/css/d2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/build/css/d2-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/build/css/donate.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/build/css/donate-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/build/css/education.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/build/css/education-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/build/css/events.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/build/css/events-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/build/css/home.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/build/css/home-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/build/css/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/build/css/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/build/css/meet-philadanco.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/build/css/meet-philadanco-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/d2.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1515,6 +1595,26 @@
 		"oA": 0,
 		"oAP": "/index.html",
 		"oF": 0
+		},
+	"/src/img/arrow-down.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/src/img/arrow-down.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/img/s1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/src/img/s1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/src/scss/about.css": {
 		"aP": 1,
