@@ -1,9 +1,11 @@
 
+<?php 
+
 /*
 Template Name: about
 */
 
-<?php get_header(); ?>
+get_header(); ?>
 
 
 

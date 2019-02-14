@@ -1,3 +1,6 @@
+
+<?php 
+
 /* 
 
 Template Name: Events
@@ -5,7 +8,7 @@ Template Name: Events
 */
 
 
-<?php get_header(); ?>
+get_header(); ?>
 
 
 

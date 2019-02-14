@@ -7,7 +7,7 @@ Template Name: Donate
         <img src='https://placehold.it/400x250' alt=''/>
         <h1><?php the_title(); ?></h1>
 
-    </header>
+
 
     <main>
         <?php if (have_posts()): ?> 
