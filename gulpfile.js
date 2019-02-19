@@ -93,7 +93,7 @@ gulp.task("move", function () {
 
 
 gulp.task('watch', function () {
-    gulp.watch('alpha/src/scss/**/*.scss', gulp.series('sass'));
+    gulp.watch('alpha/src/scss/**/*.scss', gulp.series('move'));
   
 });
 

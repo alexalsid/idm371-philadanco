@@ -11,6 +11,9 @@ function load_theme_assets() {
 
     wp_enqueue_style('home', get_template_directory_uri() . '/dist/css/home.css');
 
+   } else if (is_page('education')) {
+        wp_enqueue_style('education', get_template_directory_uri() . '/dist/css/education.css');
+
    }
 
 }

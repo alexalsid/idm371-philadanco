@@ -3,7 +3,7 @@
     overflow: hidden;
 }
 
-nav {
+nav:nth-child(1) {
     position: fixed;
     height: 70px;
     background-color: white;

@@ -16,7 +16,7 @@
 
 
         <div id="logo">
-            <img src="../build/img/logo.svg" alt="go home">
+            <img src="<?php echo get_template_directory_uri() . '/dist/img/logo.svg'?>" alt="go home">
         </div>
 
 

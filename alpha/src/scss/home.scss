@@ -8,32 +8,6 @@ button {
     display: block;
     margin: 20px auto;}
 
-.circle {height: 300px;
-width: 300px;
-border-radius: 50%;
-background-color: black;
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 1fr 1fr;
-color: white;
-justify-items: center;
-margin: 20px auto;
-overflow: hidden;}
-
-.circle-img {
-height: 100%;
-width: 100%;}
-
-.circle-img img {
-    height: 100%;
-}
-
-.circle-info {height: 100%;
-width: 100%;
-padding: 10px;
-border-top-left-radius: 25%; 
-border-top-right-radius: 25%; 
-}
 
 #videoBackground{
     z-index: -5;
@@ -77,7 +51,6 @@ border-top-right-radius: 25%;
 
 .contain{
     background-image: linear-gradient(black, white);
-    display: flex;
     margin-top: -5px;
 }
 
@@ -87,50 +60,32 @@ border-top-right-radius: 25%;
     width: 90%;
 }
 
-table{
-    margin: 2% auto;
+.info-boxes {display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+height: 300px;}
+
+.info-boxes button {
+    position: absolute;
+    display: block;
+    top: 125px;
+   left: 50%;
+   margin: 0;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%)
 }
 
-td{
-    text-align: center; 
+.info-box {display: grid;
+grid-template-rows: 150px 150px;
+position: relative;
 }
 
-.circle2 {
-    background: none repeat scroll 0 0 black;
-    border-radius: 50%;
-    color: white;
-    display: table-cell;
-    font-size: 14px;
-    height: 300px;
-    margin: 0 auto;
-    text-align: center;
-    vertical-align: middle;
-    width: 300px;
-    overflow: hidden; 
+.img-bot {
+    overflow: hidden;
 }
 
-.circle-imgBot {
-    height: 50%;
-    margin-bottom: -57px;
+.img-bot img {
+  height: auto;
+width: auto;
+min-height: 100%;
+min-width: 100%;
 }
-
-.circle-infoTop{
-    width: 75%;
-    margin: 0 auto;
-}
-
-.circle-imgTop{
-    margin-top: -38px;
-}
-
-.circle-infoBot{
-    width: 75%;
-    margin: 0 auto;
-}
-
-.circles2{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-

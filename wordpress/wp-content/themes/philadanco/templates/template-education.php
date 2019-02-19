@@ -5,7 +5,15 @@
 Template Name: education
 */
 
-get_header(); ?>
+get_header(); 
+
+get_template_part('hero')
+
+
+?>
+
+
+
 
 
    <main>

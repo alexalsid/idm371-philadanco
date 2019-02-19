@@ -3,7 +3,8 @@
 .container {margin-top: 10px;}
 
 main {margin: 15px;
-max-width: 122.5rem;}
+max-width: 122.5rem;
+padding: 15px;}
 
 @media screen and (min-width: 31.25rem) {
     main {margin: 30px;}
@@ -78,8 +79,10 @@ $max-font-size: 18px;
         
       }
 
-      @if $font-calc <= 18px {
-    line-height: $font-calc *2;}
+      @if $font-calc <= 16px {
+    line-height: $font-calc *2;} @else {
+      line-height: 1.3;
+    }
       
     }
   }
@@ -134,7 +137,10 @@ font-family: $alegreya;
 font-weight: 400;
 margin: 10px 0;}
 
-h5 {text-transform: uppercase;
+h5 {
+font-size: $mod_1*1rem; 
+@include fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size);
+text-transform: uppercase;
 font-family: $avenir;
 margin: 10px 0;}
 
@@ -184,6 +190,13 @@ $btn-transition: all .3s;
 $btn-width: 120px;
 $btn-height: 50px;
 
+
+button {
+  height: $btn-height;
+  width: $btn-width;
+  transition: $btn-transition;
+  border-radius: $btn-bradius;
+}
 
 
 button.purple{
