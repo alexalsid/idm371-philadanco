@@ -1,4 +1,5 @@
  <footer>
+     <?php wp_footer(); ?> 
         <div class="logo">
             <img src="../build/img/logo.svg" alt="logo">
         </div>
