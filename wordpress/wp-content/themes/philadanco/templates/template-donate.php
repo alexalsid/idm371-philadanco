@@ -22,14 +22,11 @@ Template Name: Donate
 
         <div class="display_flex overlap">
             <div class="info"><p><?php echo get_field('tagline'); ?></p></div>
-           <!--  put in charitable form here instead of placeholder form -->
-            <div class="form">
-                <form>
-                    <input type="text" placeholder="Jane">
-                    <input type="text" placeholder="Doe">
-                    <input type="text" placeholder="janedoe@example.com">
-                    <button class="purple">Next Step</button>
-                </form>
+            <div id="form">
+                <?php 
+                    $campaign_id = 80;
+                    charitable_get_campaign( $campaign_id )->get_donation_form()->render();  
+                ?>
             </div>
         </div>
         <div class="mission">
