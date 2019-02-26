@@ -1,0 +1,1 @@
+var burger=document.getElementById("burger");function openMenu(){var e=document.querySelector("menu-cont");e.classList.contains("close")?e.classList.remove("close"):e.classList.add("open")}function closeMenu(){menu.classList.contains("open")?menu.classList.remove("open"):menu.classList.add("close")}

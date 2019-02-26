@@ -4,9 +4,8 @@ Template Name: Donate
 <body>
     <header>
     	<!-- swap out img -->
-        <img src='https://placehold.it/400x250' alt=''/>
+        <img src="<?php echo get_template_directory_uri() . '/dist/img/donate.jpg'?>" alt=''/>
         <h1><?php the_title(); ?></h1>
-
 
 
     <main>
@@ -24,6 +23,7 @@ Template Name: Donate
             <div class="info"><p><?php echo get_field('tagline'); ?></p></div>
            <!--  put in charitable form here instead of placeholder form -->
             <div class="form">
+                <h2>Donate To Philadanco</h2>
                 <form>
                     <input type="text" placeholder="Jane">
                     <input type="text" placeholder="Doe">

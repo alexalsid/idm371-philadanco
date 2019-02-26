@@ -8,16 +8,32 @@ padding: 20px;}
 footer img, footer ul, footer input {display: block;
 margin: 20px auto;}
 
-footer img {height: 80px;}
+footer img {height: 80px;
+}
 
 
 
 nav li::before {display: none;}
 
-.socials {display: flex;}
+nav li {padding: 20px 0;}
+
+nav a {color: white}
+
+.socials {display: flex;
+    margin: 20px;
+
+    img {height: 40px;}
+
+}
 
 input[type="submit"] {
     margin: 0 auto;
+}
+
+.copyright p {
+    text-align: center;
+    margin: 20px 0;
+    max-width: none;
 }
 
 @media screen and (min-width: 56.25rem) {

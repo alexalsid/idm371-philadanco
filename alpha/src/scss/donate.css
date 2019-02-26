@@ -61,26 +61,25 @@ label {
   .display_flex {
     display: flex;
     flex-direction: row; }
-
   .overlap {
     position: absolute;
     top: 20%;
     width: 100%; }
-
   .info {
     max-width: 50%;
     color: white; }
-
   .form {
-    min-width: 50%; }
-
+    min-width: 50%;
+    background-color: white;
+    margin-left: 40%; }
+    .form h2 {
+      text-align: center; }
   .mission_content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; }
     .mission_content p {
       margin: 2%; }
-
   .support_content {
     display: flex;
     flex-direction: row;
@@ -88,23 +87,19 @@ label {
     flex-direction: row-reverse; }
     .support_content p {
       margin: 2%; }
-
   .icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1%;
     grid-row-gap: 1%; } }
+
 @media (min-width: 1024px) {
   .overlap {
     top: 45%; }
-
   .icons {
     display: row;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 1%;
     grid-row-gap: 3%; }
-
   .charitable-donation-form .donation-amounts .donation-amount {
     width: 50%; } }
-
-/*# sourceMappingURL=donate.css.map */

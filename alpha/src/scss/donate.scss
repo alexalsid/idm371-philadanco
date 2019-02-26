@@ -80,6 +80,10 @@ label {
 	}
 	.form {
 		min-width: 50%;
+		background-color: white;
+		margin-left: 40%;
+
+		h2 {text-align: center;}
 	}
 	.mission_content {
 		@include flex;
