@@ -20,8 +20,8 @@ get_template_part('hero')
     <img src="<?php the_field('meet-team')?>" alt="">
     <div>
     <h3>Meet Philadanco</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iste ex magnam sequi suscipit incidunt repudiandae, ut officiis<p>
-    <button class="purple">More</button>
+    <p><?php the_field('meet_team_blurb') ?><p>
+    <button class="purple"><a href="<?php the_field('meet_team_link')?>">More</button>
 </div>
 
 

@@ -1,13 +1,16 @@
+h1, h2, h3, h4, h5 {
+  text-align: center; }
 
-h1, h2, h3, h4, h5 {text-align: center;}
-
-input {margin: 0 auto;}
+input {
+  margin: 0 auto; 
+}
 
 button {
+  display: block;
+  margin: 20px auto; }
 
-    display: block;
-    margin: 20px auto;}
 
+/*Hannah's stuff*/
 
 #videoBackground{
     z-index: -5;
@@ -51,6 +54,7 @@ button {
 
 .contain{
     background-image: linear-gradient(black, white);
+    display: flex;
     margin-top: -5px;
 }
 
@@ -60,33 +64,53 @@ button {
     width: 90%;
 }
 
-.info-boxes {display: grid;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-height: 300px;}
-
-.info-boxes button {
-    position: absolute;
-    display: block;
-    top: 125px;
-   left: 50%;
-   margin: 0;
--webkit-transform: translateX(-50%);
-transform: translateX(-50%)
+table{
+    margin: 2% auto;
 }
 
-.info-box {display: grid;
-grid-template-rows: 150px 150px;
-position: relative;
-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+td{
+    text-align: center; 
 }
 
-.img-bot {
-    overflow: hidden;
+.imageCircle {
+    background: none repeat scroll 0 0 black;
+    border-radius: 50%;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
+    overflow: hidden; 
 }
 
-.img-bot img {
-  height: auto;
-width: auto;
-min-height: 100%;
-min-width: 100%;
+.sectionInfo{
+    padding: 0.5%;
+    width: 80ch;
+    margin: 0 auto;
+}
+
+.imageCircle{
+    margin: 0 auto;
+}
+
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    margin: 0 auto;
+    max-width: 950px;
+}
+
+@media screen and (min-width: 1024px){
+    
+    .sectionInfo{
+        margin: 0 auto;
+    }
+    .imageCircle{
+        margin: auto;
+    }
+    
+    .section{
+        padding: 0 5px;
+    }
 }

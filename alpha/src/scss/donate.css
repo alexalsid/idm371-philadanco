@@ -137,17 +137,13 @@ ul li::before {
 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 1%;
-    grid-row-gap: 3%; 
-
+    grid-row-gap: 3%; }
   .charitable-donation-form .donation-amounts .donation-amount {
-    width: 50%; } 
-  
-  
+    width: 50%; } }
     grid-row-gap: 3%; 
+  
+  } 
   
   }
-
-  
-
 
 /*# sourceMappingURL=donate.css.map */

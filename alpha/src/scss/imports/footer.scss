@@ -15,9 +15,11 @@ footer img {height: 80px;
 
 nav li::before {display: none;}
 
-nav li {padding: 20px 0;}
+nav li {padding: 15px 0;}
 
-nav a {color: white}
+nav a {color: white;}
+
+footer a:visited {color: white;}
 
 .socials {display: flex;
     margin: 20px;
