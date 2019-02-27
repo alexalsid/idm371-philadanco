@@ -19,16 +19,16 @@ get_header(); ?>
             <h1 class="event-h1"><?php the_field('event_title')?></h1>
             <p class="event-p"><?php the_field('event_description')?></p>
                 <div class="display_flex spacing_center">
-                    <h2 class="event-dates"><span class="event-h2" id="span-day">Friday</span><br>
-                    Nov 16</h2>
+                    <h2 class="event-dates"><span class="event-h2" id="span-day"><?php the_field('start_day')?></span><br>
+                    <?php the_field('start_date')?></h2>
                     <h2 class="event-dates hyphen">-</h2>
-                    <h2 class="event-dates"><span class="event-h2" id="span-day">Sunday</span><br>
-                    Nov 18, 2018</h2>
-                    <button class="purple">Tickets</button>
+                    <h2 class="event-dates"><span class="event-h2" id="span-day"><?php the_field('end_day')?></span><br>
+                    <?php the_field('end_date')?></h2>
+                    <button class="purple"><a href="<?php the_field('ticket_link')?>">Tickets</a></button>
                 </div>
                 <div class="center-upcoming-events">
                     <h2 class="event-h2"><?php the_field('next_event')?></h2><img alt='' src='<?php the_field('next_event_image')?>'>
-                    <h4>Friday April 12 - Sunday April 14, 2019</h4>
+                    <h4><?php the_field('full_date')?></h4>
                 </div>
         </div>
     </div>
@@ -43,35 +43,34 @@ get_header(); ?>
 
     <h2>Philadanco in the News</h2>
     <div class="articles">
+
+    <?php if( have_rows('articles') ):
+
+ 	// loop through the rows of data
+    while ( have_rows('articles') ) : the_row(); ?>
+
+
+
         <div class="article">
-            <img alt='' src='https://placehold.it/400x250'>
-            <div class="rectangle_background overlap text_margin">
-                <h2 class="bold">Philadanco's Joan Myers Brown: Frontierswoman of Modern Dance</h2>
-<!--                 <h3 class="inline">October 23, 2017</h3>
- -->            <h3>September 18, 2018</h3>            
-                <p><a href="">Read More</a></p>
+            <div class="info">
+                <h3><?php the_sub_field('article_title'); ?></h3>
+                <h6><?php the_sub_field('date_published'); ?></h6> 
             </div>
+            <button class="purple"> <a href="<?php the_sub_field('article_link'); ?>">Read More </a></button>
+            <div class="article-image">
+                <img src="<?php the_sub_field('article_image'); ?>">
+            </div>
+
         </div>
+
+
+    <?php endwhile; ?>
+
+<?php endif; ?>
+      
     </div>
 
-    <div class="display_grid">
-        <div class="article half">
-            <img alt='' src='https://placehold.it/400x250'>
-            <div class="rectangle_background overlap">
-                <h2 class="bold">School of Dance Arts 2018 Brochure Available</h2>
-                <h3>August 12, 2018</h3>
-                <p><a href="">Read More</a></p>
-            </div>
-        </div>
 
-        <div class="article half">
-            <img alt='' src='https://placehold.it/400x250'>
-            <div class="rectangle_background overlap">
-                <h2 class="bold">7 Days of Things to do in Philadelphia From Nov. 11 to 17</h2>
-                <h3>August 12, 2018</h3>
-                <p><a href="">Read More</a></p>
-            </div>
-        </div>
     </div>
 </main>
 

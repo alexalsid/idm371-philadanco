@@ -131,11 +131,12 @@ h3 {font-size: $mod_1*$mod_1*$mod_1 *1rem;
     font-weight: 400;
     margin: 15px 0;}
 
-h4 {font-size: $mod_1*$mod_1*1rem; 
+h4 {font-size: $mod_1*$mod_1*1.4rem; 
 @include fluid-type($min-vw, $max-vw, $mod_1 *$min-font-size, $mod_2 *$max-font-size);
 font-family: $alegreya;
 font-weight: 400;
-margin: 10px 0;}
+margin: 10px 0;
+line-height: 2;}
 
 h5 {
 font-size: $mod_1*1rem; 
@@ -195,6 +196,7 @@ button {
   height: $btn-height;
   width: $btn-width;
   transition: $btn-transition;
+  border: none;
   border-radius: $btn-bradius;
 }
 
@@ -395,6 +397,11 @@ ul li::before {
 };
 
 //links
+
+button.purple a {color: white !important;}
+
+
+button.purple a:visited {color: white !important;}
 
 a {font-family: $avenir;
 font-weight: 600;

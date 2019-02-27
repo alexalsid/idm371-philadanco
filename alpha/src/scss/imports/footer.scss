@@ -5,7 +5,7 @@ color: white;}
 footer {background-color: $darkpurple-2;
 padding: 20px;}
 
-footer img, footer ul, footer input {display: block;
+footer a, footer ul, footer input {display: block;
 margin: 20px auto;}
 
 footer img {height: 80px;
@@ -23,13 +23,16 @@ footer a:visited {color: white;}
 
 .socials {display: flex;
     margin: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     img {height: 40px;}
 
 }
 
-input[type="submit"] {
-    margin: 0 auto;
+footer button {
+    margin: 0 auto !important;
+    display: block;
 }
 
 .copyright p {

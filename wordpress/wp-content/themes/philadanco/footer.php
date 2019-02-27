@@ -26,10 +26,10 @@
 
 
         <div class="socials">
-            <img src="<?php echo get_template_directory_uri() . "/dist/img/facebook.svg" ?>" alt="facebook">
-            <img src="<?php echo get_template_directory_uri() . "/dist/img/twitter.svg" ?>" alt="twitter">
-            <img src="<?php echo get_template_directory_uri() . "/dist/img/instagram.svg" ?>" alt="instagram">
-            <img src="<?php echo get_template_directory_uri() . "/dist/img/youtube.svg" ?>" alt="youtube">
+            <a href=""><img src="<?php echo get_template_directory_uri() . "/dist/img/facebook.svg" ?>" alt="facebook"></a>
+            <a href=""><img src="<?php echo get_template_directory_uri() . "/dist/img/twitter.svg" ?>" alt="twitter"></a>
+            <a href=""> <img src="<?php echo get_template_directory_uri() . "/dist/img/instagram.svg" ?>" alt="instagram"></a>
+             <a href=""><img src="<?php echo get_template_directory_uri() . "/dist/img/youtube.svg" ?>" alt="youtube"></a>
         </div>
 
 

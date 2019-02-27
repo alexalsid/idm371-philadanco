@@ -72,45 +72,32 @@ td{
     text-align: center; 
 }
 
-.imageCircle {
-    background: none repeat scroll 0 0 black;
-    border-radius: 50%;
-    height: 300px;
-    margin: 0 auto;
+.section {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 50px auto; 
+    box-sizing: border-box;
+    padding: 20px 0;
+
+}
+
+
+.sec-image {
+
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.sec-image img {
+    max-width: 100%;
+    height: auto;
+    widows: auto;
+
+    
+}
+
+.section p {
     text-align: center;
-    vertical-align: middle;
-    width: 300px;
-    overflow: hidden; 
+    padding: 15px;
 }
 
-.sectionInfo{
-    padding: 0.5%;
-    width: 80ch;
-    margin: 0 auto;
-}
-
-.imageCircle{
-    margin: 0 auto;
-}
-
-.section{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-    margin: 0 auto;
-    max-width: 950px;
-}
-
-@media screen and (min-width: 1024px){
-    
-    .sectionInfo{
-        margin: 0 auto;
-    }
-    .imageCircle{
-        margin: auto;
-    }
-    
-    .section{
-        padding: 0 5px;
-    }
-}

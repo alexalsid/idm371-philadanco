@@ -17,11 +17,11 @@ get_template_part('hero')
 <div class="intro"><p><?php the_field('about_intro')?></p></div>
 
 <div class="meet-team">
-    <img src="<?php the_field('meet-team')?>" alt="">
+    <img src="<?php the_field('meet_team')?>" alt="">
     <div>
     <h3>Meet Philadanco</h3>
     <p><?php the_field('meet_team_blurb') ?><p>
-    <button class="purple"><a href="<?php the_field('meet_team_link')?>">More</button>
+    <button class="purple"><a href="<?php the_field('meet_team_link')?>">More</a></button>
 </div>
 
 
