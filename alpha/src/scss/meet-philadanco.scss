@@ -1,1 +1,86 @@
 //meet the team
+
+main {display: grid;
+
+
+
+.card {width: 100%;
+ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+display: grid;
+justify-content: center;
+text-align: center;
+margin: 30px 0;
+
+img {display: block;
+margin: 0 auto;}
+
+
+button {
+    height: 50px;
+    width: 50px;
+    background-color: #7927A1;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(25px);
+    background-image: url(../../src/img/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+
+}
+
+.bio-card {
+    background-image: url(../../src/img/s1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+}
+
+@media screen and (min-width: 46rem) {
+    .dancers, .bod {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;}
+
+    
+
+
+}
+
+@media screen and (min-width: 62.5rem) {
+    .top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;}
+
+    
+    
+}
+
+@media screen and (min-width: 75rem) {
+
+     main {grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+     .top {grid-column: 1/5;}
+
+    .dancers {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column: 1/4;
+    }
+
+    .bod {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+    
+}
