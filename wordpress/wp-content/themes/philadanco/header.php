@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>D2</title>
+    <title><?php the_title()?></title>
+    <?php wp_head(); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="build/css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="build/css/d2.css" />
+
 
 </head>
 
@@ -16,33 +16,23 @@
 
 
         <div id="logo">
-            <img src="../build/img/logo.svg" alt="go home">
+            <img src="<?php echo get_template_directory_uri() . '/dist/img/logo.svg'?>" alt="go home">
         </div>
 
 
 
-        <div class="menu">
+        <div class="menu-cont">
+            <p id="exit">X</p>
 
 
+<?php
+            wp_nav_menu([
+                'theme_location'  => 'main',
+                'container'       => 'ul',
+            ]);
 
-            <ul>
-                <p>X</p>
-                <a>
-                    <li>Events</li>
-                </a>
-                <a>
-                    <li>About</li>
-                </a>
-                <a>
-                    <li>Education</li>
-                </a>
-                <a>
-                    <li>Donate</li>
-                </a>
-                <a>
-                    <li>Blog</li>
-                </a>
-            </ul>
+            ?>
+            
 
         </div>
 
