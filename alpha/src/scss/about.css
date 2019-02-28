@@ -1,0 +1,68 @@
+.hero h1 {
+  color: black;
+  text-align: left;
+  margin: 0 0 10px 40px; }
+
+main .contact, .meet-team {
+  width: 95%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 0 auto; }
+
+.meet-team h3 {
+  text-align: center; }
+
+input, textarea {
+  margin: 20px auto; }
+
+button {
+  display: block;
+  margin: 20px auto; }
+
+h2 {
+  text-align: center; }
+
+.history {
+  margin-left: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%; }
+
+.info {
+  margin-bottom: 10%; }
+
+.hero h1 {
+  text-align: center; }
+
+@media screen and (min-width: 40rem) {
+  main .contact {
+    width: 70%; }
+
+  .meet-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%; }
+    .intro p {
+      padding: 1.5%;
+      max-width: 50%; }
+
+  .history {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%; }
+    .history blockquote {
+      padding-bottom: 1.1%;
+      width: 100%; }
+
+  .columns {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0; }
+    .columns img {
+      margin-left: 3%; } }
+
+/*# sourceMappingURL=about.css.map */
