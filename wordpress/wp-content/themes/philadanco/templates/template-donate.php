@@ -4,7 +4,7 @@ Template Name: Donate
 <body>
     <header>
     	<!-- swap out img -->
-        <img src="<?php echo get_template_directory_uri() . '/dist/img/donate.jpg'?>" alt=''/>
+        <img id="donate-main-img" src="<?php echo get_template_directory_uri() . '/dist/img/donate.jpg'?>" alt=''/>
         <h1><?php the_title(); ?></h1>
 
 
@@ -47,6 +47,7 @@ Template Name: Donate
                 </div>
             </div>
 
+
             <div class="supporters">
                 <h2>Philadanco has been made possible in part by:</h2>
                 <div class="icons">
@@ -61,7 +62,7 @@ Template Name: Donate
 
 
 
-
+<!-- Tracking that this was pooooshed -->
 
 
 <?php get_footer(); ?>
