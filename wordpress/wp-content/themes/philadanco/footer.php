@@ -1,7 +1,7 @@
  <footer>
      <?php wp_footer(); ?> 
         <div class="logo">
-            <img src=<?php echo get_template_directory_uri() . "/dist/img/logo_white.svg" ?> alt="logo">
+            <a href="<?php echo home_url();?>"><img src=<?php echo get_template_directory_uri() . "/dist/img/logo_white.svg" ?> alt="logo"></a>
         </div>
         <nav>
             

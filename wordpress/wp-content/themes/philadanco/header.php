@@ -16,13 +16,15 @@
 
 
         <div id="logo">
-            <img src="<?php echo get_template_directory_uri() . '/dist/img/logo.svg'?>" alt="go home">
+            <a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri() . '/dist/img/logo.svg'?>" alt="go home"></a>
         </div>
 
 
 
         <div class="menu-cont">
-            <p id="exit">X</p>
+            <div id="exit">
+                <img src="<?php echo get_template_directory_uri() . '/dist/img/exit.svg' ?>">
+</div>
 
 
 <?php

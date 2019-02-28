@@ -340,7 +340,7 @@ position: absolute;
 }
 
 
-.check-container .checkmark::after,  {
+.check-container .checkmark::after  {
   left: 9px;
   top: 5px;
   width: 5px;
@@ -410,20 +410,19 @@ transition: $btn-transition;
 @include fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size);
 
 text-decoration: none;
-    &:hover {
-        color: $yellow;
-       font-style: italic;
-      
-    }
-    &:visited {
-        color: $darkgrey;
-    }
 
+
+}
+
+a:hover {
+  color: $yellow;
 }
 
 
 
-
+a:visited {
+  color: $darkgrey;
+}
 
 
 

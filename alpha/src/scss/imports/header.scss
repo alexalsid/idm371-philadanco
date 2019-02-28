@@ -43,8 +43,11 @@ margin: 0;}
   a {color: black;
     @include fluid-type($min-vw, $max-vw, $mod_1* $mod_1 * $min-font-size, $mod_2 * $mod_2 * $max-font-size);
     }
-  p {text-align: right;
-font-size: 1.2em;}
+
+    a:hover {color: $yellow;}
+
+    a:visited {color: $purple;}
+
 
 .menu-cont li {padding: 0 20px;
 display: block;} }
@@ -101,6 +104,8 @@ display: block;} }
 
     #burger {display: none;}
 
+    #exit {display: none;}
+
     
 
 
@@ -116,6 +121,12 @@ width: 100%;}
 header h1 {text-align: center;
 transform: translateY(-4ch);
 color: white;}
+
+#exit {
+    margin-left: 85%;
+    margin-top: 20px;
+
+}
 
 
 
