@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /idm271-philadanco/wordpress/
+RewriteBase /philadanco-hannah/wordpress/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /idm271-philadanco/wordpress/index.php [L]
+RewriteRule . /philadanco-hannah/wordpress/index.php [L]
 </IfModule>
 
 # END WordPress
