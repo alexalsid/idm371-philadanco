@@ -39,15 +39,14 @@ get_header(); ?>
 
         <div class = "section">
             <h1><?php the_sub_field('section_title'); ?></h1>
-            <div class="sec-image">
-                <img src="<?php the_sub_field('section_image');?>">
-            </div>
-            <div class="sectionInfo">
-
-            
-                
-                <p><?php the_sub_field('section_blurb');?></p>
-                <button class="purple"><a href="<?php the_sub_field('section_link');?>">More</a></button>
+            <div class="sec-contain">
+                <div class="sec-image">
+                    <img src="<?php the_sub_field('section_image');?>">
+                </div>
+                <div class="sec-info">
+                    <p><?php the_sub_field('section_blurb');?></p>
+                    <button class="purple"><a href="<?php the_sub_field('section_link');?>">More</a></button>
+                </div>
             </div>
         </div>
 
