@@ -222,9 +222,20 @@ width: 100%;
 	}
 }
 
+	.left {transform: translateY(-100px);}
+
+	@media screen and (min-width: 700px) {
+
+			.left {transform: translateY(0px);}
+
+		
+	}
+ 
 
 
 @media screen and (max-width: 600px) {
+
+		
 	img {
 		min-width: 100%;
 	}
@@ -297,6 +308,10 @@ width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
+
+
+
+	
 	img {
 		max-width: 100%;
 	}
@@ -305,4 +320,21 @@ width: 100%;
 	  position: relative;
 	  max-width: 100%;
 	  margin-left: 50px; }
+
+.next-event-image {
+	height: 300px;
+	width: 300px;
+	overflow: hidden; }
+
+	.next-event-image img {
+		display: block;
+		widows: 100%;
+	} 
+
+	
 }
+
+
+
+
+

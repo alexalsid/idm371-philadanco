@@ -14,7 +14,7 @@ get_header(); ?>
    
     <main>
     <div class="event-info-container" id="event-info-container">
-        <div class="left"><img alt='' id="events-pic" src='img/events-pic.jpg'></div>
+        <div class="left"><img alt='' id="events-pic" src='<?php echo get_template_directory_uri() . '/dist/img/events-pic.jpg'?>'></div>
         <div class="right">
             <h1 class="event-h1"><?php the_field('event_title')?></h1>
             <p class="event-p"><?php the_field('event_description')?></p>
@@ -27,7 +27,11 @@ get_header(); ?>
                     <button class="purple"><a href="<?php the_field('ticket_link')?>">Tickets</a></button>
                 </div>
                 <div class="center-upcoming-events">
-                    <h2 class="event-h2"><?php the_field('next_event')?></h2><img alt='' src='<?php the_field('next_event_image')?>'>
+                    <h2 class="event-h2"><?php the_field('next_event')?></h2>
+                    <div class="next-event-image"><img alt='' src='<?php 
+                    //echo get_template_directory_uri() . '/dist/img/education_01.jpg'
+                    //the_field('next_event_image')
+                    ?>'></div>
                     <h4><?php the_field('full_date')?></h4>
                 </div>
         </div>
