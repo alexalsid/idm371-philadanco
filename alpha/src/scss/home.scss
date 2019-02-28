@@ -9,16 +9,16 @@ button {
   margin: 20px auto; }
 
 /*Hannah's stuff*/
-#videoBackground {
+.videoBackground {
   z-index: -5; }
 
-#frontVideo {
+.videoBackground img{
   width: 100%;
   height: 100%;
   margin-top: 19%; }
 
 @media screen and (min-width: 768px) {
-  #frontVideo {
+  .videoBackground img{
     margin-top: 9%; } }
 
 @media screen and (min-width: 1024px) {

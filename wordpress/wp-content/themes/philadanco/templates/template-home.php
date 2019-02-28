@@ -8,9 +8,7 @@ Template Name: homepage
 get_header(); ?>
 
 <header id = "videoBackground">
-    <video autoplay muted loop id="frontVideo">
-        <source src="<?php the_field('video') ?>" type="video/mp4">
-    </video>
+        <img src="<?php the_field('image');?>">
 </header>
 <div class= "contain">
     <main class = "frontPage">
