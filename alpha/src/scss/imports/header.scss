@@ -1,9 +1,14 @@
 
+
+nav {z-index: 100000;}
+
 .menu-open {
     overflow: hidden;
 }
 
-nav {
+body {overflow-x: hidden;}
+
+nav:nth-child(1) {
     position: fixed;
     height: 70px;
     background-color: white;
@@ -19,25 +24,30 @@ max-width: 200px;}
 
 
 
-.menu {
-    position: absolute;
+.menu-cont {
+    position: fixed;
     height: 100vh;
     width: 85%;
     background-color: white;
     top: 0;
-    left: -100%;
+    right: -100%;
     overflow-x: hidden;
 }
 
-nav ul {padding: 40px;}
+.menu-cont 
 
-nav a {color: black;
+
+{ul {padding: 40px;
+margin: 0;}
+
+  a {color: black;
     @include fluid-type($min-vw, $max-vw, $mod_1* $mod_1 * $min-font-size, $mod_2 * $mod_2 * $max-font-size);
     }
-nav p {text-align: right;
+  p {text-align: right;
 font-size: 1.2em;}
 
-nav li {padding: 20px;}
+.menu-cont li {padding: 0 20px;
+display: block;} }
 
 //.nav class is bug fix
 .nav li::before {display: none;}
@@ -52,13 +62,13 @@ nav li {padding: 20px;}
 
 //animations 
 @keyframes close-menu {
-    from {left: 0%;}
-    to {left: -100%;}
+    from {right: 0%;}
+    to {right: -100%;}
 }
 
 @keyframes open-menu {
-    from {left: -100%;}
-    to {left: 0%;}
+    from {right: -100%;}
+    to {right: 0%;}
 }
 
 
@@ -67,22 +77,27 @@ nav li {padding: 20px;}
 
 
 
-    .menu {position: static;
+    .menu-cont {position: static;
         height: auto;
         width: auto;
         background-color: transparent;
+
+        li {
+            display: inline-block;
+            padding: 10px 20px;
+        }
     
         
     }
 
-    .menu ul {padding: 0;}
+    .menu-cont ul {padding: 0;}
 
-    .menu a {display: inline-block;
+    .menu-cont a {display: inline-block;
 
     @include fluid-type($min-vw, $max-vw, $mod_1 * $min-font-size, $mod_2 *  $max-font-size);
     }
 
-    nav p {display: none;}
+    .menu-cont  p {display: none;}
 
     #burger {display: none;}
 

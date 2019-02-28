@@ -1,49 +1,308 @@
 //events
 
+.event-info-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    align-items: center;
+}
+
+#event-info-container 
+    > div {
+        flex: 1;
+    } /* displays 2 column */
+
+.right {
+	margin-top: 10%;
+}
+
+#events-pic {
+	width: 100%;
+}
+
+.event-h1 {
+	text-align: center;
+}
+
+.event-h2 {
+	font-family: "Avenir Next", Avenir, san-serif;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.event-p {
+	margin: 0 auto 2rem;
+}
+
 .display_flex {
   display: flex; }
 
+.spacing {
+  justify-content: center;
+}
+
+#span-day {
+	font-weight: 600;
+	font-family: "Avenir Next", Avenir, san-serif;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+}
+
+.hyphen {
+	padding: 20px;
+}
+
+
+.event-dates {
+	color: #64008D;
+	text-align: center;
+}
+
+.sign-up {
+	/*display: flex;
+	justify-content: center;*/
+	margin: 4% 0 10%;
+}
+
+.events-form {
+	margin: 0; }
+
+
+
+
 .bold {
-  font-weight: bold; }
+  font-weight: bold; 
+  line-height: 1.2;
+  font-size: 2rem;
+}
 
 .rectangle_background {
-	width: 60%;
-	height: 15%;
-  	background-color: white; 
+  width: 60%;
+  height: 15%;
+  background-color: white; 
 }
 
-.article {
-	width: 100%;
-	display: flex;
+.articles {
+
+	display: grid;
+	 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+	 max-width: 1800px;
+	 
+
+
 }
+
+.article {display: grid;
+	height: 350px;
+	position: relative;
+text-align: center;
+grid-template-rows: 1fr 1fr;
+overflow: hidden;}
+
+.article button {
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: auto;
+	transform: translateY(150px);
+}
+
+.article-image {
+	width: 100%;
+	overflow: hidden;
+}
+
+.article img {
+width: 100%;
+}
+
+
+
+.article img {
+	padding-bottom: 15px;
+}
+
 .overlap {
   position: absolute;
   min-width: 60%;
-  right: 0; 
-}
+  right: 0; }
 
 .text_margin {
-	margin: 1%;
-}
+  margin: 1%; }
 
-.read {
-	right: 0;
-	margin-top: 15%;
-
-}
-
-.inline {
-	display: inline-block;
-}
-
-.spacing {
-	justify-content: space-around;
-}
 .spacing_center {
-	justify-content: center;
+  justify-content: center; }
+
+
+.center-upcoming-events {
+	margin: 10% 0;
+	text-align: center;
 }
 
-.center {
-	margin: auto 0;
-	text-align: center;
+
+
+/* ------------------- RESPONSIVE ------------------- */
+
+
+@media screen and (max-width: 375px) {
+	img {
+		max-width: 100%;
+	}
+
+	.event-h2 {
+		font-size: 1.75rem;
+	}
+
+	.event-info-container {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.event-dates {
+		margin: 0;
+	}
+
+	.right {
+		width: 100%;
+	}
+
+	.display_flex.spacing_center {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.hyphen {
+		padding: 0;
+	}
+
+	.sign-up {
+		margin: 0;
+	}
+
+	button.purple {
+		margin: 2rem auto;
+	}
+
+	button.yellow {
+		margin: 0;
+	}
+
+	.yellow {
+		padding: 10px;
+		margin: 0;
+	}
+
+	.center {
+		text-align: center;
+		padding: 20% 0;
+	}
+
+	.events-form {
+		margin: 0 auto;
+	}
+
+
+	.rectangle_background {
+		width: 100%;
+		height: 15%;
+		background-color: white; 
+	}
+
+	.bold {
+		font-size: 1.5rem;
+	}
+
+	.overlap {
+	  position: relative;
+	  min-width: 100%;
+	  right: 0; }
+
+	.rectangle_background.overlap {
+		padding-bottom: 50px;
+	}
+}
+
+
+
+@media screen and (max-width: 600px) {
+	img {
+		min-width: 100%;
+	}
+
+
+	.event-info-container {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.event-dates {
+		margin: 0;
+	}
+
+	.right {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.display_flex.spacing_center {
+		width: 100%;
+		flex-direction: row;
+	}
+
+	.hyphen {
+		padding: 0;
+	}
+
+	.sign-up {
+		margin: 0;
+	}
+
+	button.yellow {
+		margin: 0;
+	}
+
+	.yellow {
+		padding: 10px;
+		margin: 0;
+	}
+
+	.center {
+		text-align: center;
+		padding: 20% 0;
+	}
+
+	.events-form {
+		margin: 0 auto;
+	}
+
+
+	.rectangle_background {
+		width: 100%;
+		height: 15%;
+		background-color: white; 
+	}
+
+	.bold {
+		font-size: 1.5rem;
+	}
+
+	.overlap {
+	  position: relative;
+	  min-width: 100%;
+	  right: 0; }
+
+	.rectangle_background.overlap {
+		padding-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	img {
+		max-width: 100%;
+	}
+
+	.overlap {
+	  position: relative;
+	  max-width: 100%;
+	  margin-left: 50px; }
 }

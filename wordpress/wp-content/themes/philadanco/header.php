@@ -16,33 +16,23 @@
 
 
         <div id="logo">
-            <img src="../build/img/logo.svg" alt="go home">
+            <img src="<?php echo get_template_directory_uri() . '/dist/img/logo.svg'?>" alt="go home">
         </div>
 
 
 
-        <div class="menu">
+        <div class="menu-cont">
+            <p id="exit">X</p>
 
 
+<?php
+            wp_nav_menu([
+                'theme_location'  => 'main',
+                'container'       => 'ul',
+            ]);
 
-            <ul>
-                <p>X</p>
-                <a>
-                    <li>Events</li>
-                </a>
-                <a>
-                    <li>About</li>
-                </a>
-                <a>
-                    <li>Education</li>
-                </a>
-                <a>
-                    <li>Donate</li>
-                </a>
-                <a>
-                    <li>Blog</li>
-                </a>
-            </ul>
+            ?>
+            
 
         </div>
 

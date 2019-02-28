@@ -88,12 +88,10 @@ ul li::before {
   .display_flex {
     display: flex;
     flex-direction: row; }
-
   .overlap {
     position: absolute;
     top: 20%;
     width: 100%; }
-
   .info {
     max-width: 50%;
     color: white; }
@@ -132,14 +130,20 @@ ul li::before {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1%;
     grid-row-gap: 1%; } }
+
 @media (min-width: 1024px) {
   .overlap {
     top: 25%; }
 
-  .icons {
-    display: row;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 1%;
-    grid-row-gap: 3%; } }
+    grid-row-gap: 3%; }
+  .charitable-donation-form .donation-amounts .donation-amount {
+    width: 50%; } }
+    grid-row-gap: 3%; 
+  
+  } 
+  
+  }
 
 /*# sourceMappingURL=donate.css.map */

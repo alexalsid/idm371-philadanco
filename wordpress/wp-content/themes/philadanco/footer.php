@@ -1,26 +1,17 @@
  <footer>
      <?php wp_footer(); ?> 
         <div class="logo">
-            <img src="../build/img/logo.svg" alt="logo">
+            <img src=<?php echo get_template_directory_uri() . "/dist/img/logo_white.svg" ?> alt="logo">
         </div>
         <nav>
-            <ul>
-                <a>
-                    <li>Events</li>
-                </a>
-                <a>
-                    <li>About</li>
-                </a>
-                <a>
-                    <li>Education</li>
-                </a>
-                <a>
-                    <li>Donate</li>
-                </a>
-                <a>
-                    <li>Blog</li>
-                </a>
-            </ul>
+            
+<?php
+            wp_nav_menu([
+                'theme_location'  => 'footer',
+                'container'       => 'ul',
+            ]);
+
+            ?>
         </nav>
 
         <div class="contact">
@@ -35,10 +26,10 @@
 
 
         <div class="socials">
-            <img src="../build/img/facebook.svg" alt="facebook">
-            <img src="../build/img/twitter.svg" alt="twitter">
-            <img src="../build/img/instagram.svg" alt="instagram">
-            <img src="../build/img/youtube.svg" alt="youtube">
+            <a href=""><img src="<?php echo get_template_directory_uri() . "/dist/img/facebook.svg" ?>" alt="facebook"></a>
+            <a href=""><img src="<?php echo get_template_directory_uri() . "/dist/img/twitter.svg" ?>" alt="twitter"></a>
+            <a href=""> <img src="<?php echo get_template_directory_uri() . "/dist/img/instagram.svg" ?>" alt="instagram"></a>
+             <a href=""><img src="<?php echo get_template_directory_uri() . "/dist/img/youtube.svg" ?>" alt="youtube"></a>
         </div>
 
 
@@ -46,7 +37,7 @@
             <h5>Join Our Mailing List</h5>
             <form>
                 <input type="text">
-                <input type="submit">
+               <button class="yellow">Send</button>
             </form>
         </div>
         <div class="copyright">

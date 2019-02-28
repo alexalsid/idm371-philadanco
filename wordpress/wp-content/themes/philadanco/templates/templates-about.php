@@ -4,12 +4,8 @@
 Template Name: about
 */
 get_header(); 
-
+get_template_part('hero');
 ?>
-<header class="hero">
-    <img src="<?php the_field('hero_image'); ?>" alt="" />
-    <h1><?php wp_title();?></h1>
-</header>
 
 <main>
 
@@ -26,14 +22,28 @@ get_header();
 
 </div>
 
+<main>
+
+<div class="intro"><p><?php the_field('about_intro')?></p></div>
+
+<div class="meet-team">
+    <img src="<?php the_field('meet-team')?>" alt="">
+    <div>
+    <h3>Meet Philadanco</h3>
+    <p><?php the_field('meet_team_blurb') ?><p>
+    <button class="purple"><a href="<?php the_field('meet_team_link')?>">More</a></button>
+</div>
+
+
+</div>
+
 <div class="history">
 
 <blockquote><?php the_field('about_quote') ?></blockquote>
-<div class="columns">
-<p><?php the_field('history_paragraph') ?></p>
-<img src="<?php the_field('about_image')?>" alt="">
-</div>
-
+<div class='columns'>
+  <p><?php the_field('history_paragraph') ?></p>
+  
+  <img src="<?php the_field('about_image')?>" alt=""></div>
 
 
 </div>
@@ -57,6 +67,8 @@ get_header();
 
 
 <?php 
+
 wp_footer();
+
 get_footer();
 ?>
