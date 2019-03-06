@@ -34,6 +34,21 @@ h2 {
 .hero h1 {
   text-align: center; }
 
+.error {
+  padding: 5px 9px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 3px; }
+
+.success {
+  padding: 5px 9px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 3px; }
+
+form span {
+  color: red; }
+
 @media screen and (min-width: 40rem) {
   main .contact {
     width: 70%; }
@@ -46,31 +61,26 @@ h2 {
     display: flex;
     flex-direction: row;
     margin-bottom: 5%; }
-    .intro p {
-      padding: 1.5%;
-      max-width: 50%; }
+
+  .intro p {
+    padding: 1.5%;
+    max-width: 50%; }
 
   .history {
     margin-top: 5%;
     margin-bottom: 5%;
     width: 90%; }
-    .history blockquote {
-      padding-bottom: 1.1%;
-      width: 100%; }
+
+  .history blockquote {
+    padding-bottom: 1.1%;
+    width: 100%; }
 
   .columns {
     display: flex;
     flex-direction: row;
     margin: auto 0; }
-    .columns img {
-      margin-left: 3%; } }
+
+  .columns img {
+    margin-left: 3%; } }
 
 /*# sourceMappingURL=about.css.map */
-
-@media screen and (min-width: 40rem) {
-  main .contact {
-    width: 70%; }
-  .meet-team {
-    display: grid;
-    grid-template-columns: 1fr 1fr; } }
-
