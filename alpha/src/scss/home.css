@@ -1,0 +1,95 @@
+h1, h2, h3, h4, h5 {
+  text-align: center; }
+
+input {
+  margin: 0 auto; }
+
+button {
+  display: block;
+  margin: 20px auto; }
+
+/*Hannah's stuff*/
+.videoBackground {
+  z-index: -5; }
+
+.videoBackground img {
+  width: 100%;
+  height: 100%;
+  margin-top: 19%; }
+
+@media screen and (min-width: 768px) {
+  .videoBackground img {
+    margin-top: 9%; } }
+@media screen and (min-width: 1024px) {
+  #frontVideo {
+    margin-top: 0%; } }
+.subForm {
+  max-width: 320px;
+  margin: 0 auto; }
+
+.subForm input {
+  float: left; }
+
+.subForm button {
+  height: 37px;
+  width: 46px; }
+
+.tickets {
+  text-align: center; }
+
+.contain {
+  background-image: linear-gradient(black, white);
+  display: flex;
+  margin-top: -5px; }
+
+.frontPage {
+  margin: 15px auto;
+  background-color: white;
+  width: 90%; }
+
+table {
+  margin: 2% auto; }
+
+td {
+  text-align: center; }
+
+.section {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 50px auto;
+  box-sizing: border-box;
+  padding: 20px 0; }
+
+@media screen and (min-width: 1400px) {
+  .section {
+    width: 75%; } }
+@media screen and (min-width: 1024px) {
+  .sec-contain {
+    display: flex;
+    max-width: 1250px;
+    margin: 0 auto; } }
+.sec-image {
+  background: none repeat scroll 0 0 black;
+  border-radius: 50%;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  width: 300px;
+  overflow: hidden; }
+
+.sec-image img {
+  max-width: 100%;
+  height: auto;
+  widows: auto; }
+
+.section p {
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto; }
+
+@media screen and (min-width: 1024px) {
+  .sec-info {
+    width: 65%;
+    padding: 1%; } }
+
+/*# sourceMappingURL=home.css.map */

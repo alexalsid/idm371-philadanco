@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth; }
+
+.links {
+  text-align: center; }
+
+.course-links-container {
+  display: inline-block;
+  line-height: 1.9;
+  text-align: left; }
+
+.intro {
+  width: 900px;
+  padding: 1rem;
+  margin: 0 auto; }
+
+#swirl-container {
+  text-align: center;
+  padding: 3rem 0; }
+
+.classes {
+  padding: 0 4rem; }
+
+.classes-container {
+  display: block;
+  padding: 2rem 0;
+  margin: 0; }
+
+.class-desc {
+  padding-bottom: 5rem; }
+
+h1 {
+  text-transform: uppercase; }
+
+h3 {
+  padding-bottom: 1em; }
+
+.classes img {
+  display: block;
+  height: 325px;
+  width: auto;
+  padding: 1.5rem; }
+
+/*# sourceMappingURL=events.css.map */
+
+/*# sourceMappingURL=education.css.map */

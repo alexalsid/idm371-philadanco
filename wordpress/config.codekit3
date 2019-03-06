@@ -7440,6 +7440,13 @@
 		"oAP": "/build/wp-content/themes/philadanco/footer.php",
 		"oF": 0
 		},
+	"/wp-content/themes/philadanco/front-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/build/wp-content/themes/philadanco/front-page.php",
+		"oF": 0
+		},
 	"/wp-content/themes/philadanco/functions.php": {
 		"cB": 0,
 		"ft": 8192,
