@@ -28,7 +28,11 @@ function load_theme_assets() {
 
     wp_enqueue_style('events', get_template_directory_uri() . '/dist/css/about.css');
 
-   } 
+   } else if (is_page('Meet-Philadanco')) {
+       wp_enqueue_style('mtt', get_template_directory_uri() . '/dist/css/meet-philadanco.css');
+
+
+   }
 }
 
 add_action('wp_enqueue_scripts', 'load_theme_assets');

@@ -29,8 +29,7 @@ get_header(); ?>
                 <div class="center-upcoming-events">
                     <h2 class="event-h2"><?php the_field('next_event')?></h2>
                     <div class="next-event-image"><img alt='' src='<?php 
-                    //echo get_template_directory_uri() . '/dist/img/education_01.jpg'
-                    //the_field('next_event_image')
+                    the_field('next_event_image')
                     ?>'></div>
                     <h4><?php the_field('full_date')?></h4>
                 </div>
