@@ -8,9 +8,7 @@ Template Name: homepage
 get_header(); ?>
 
 <header id = "videoBackground">
-    <video autoplay muted loop id="frontVideo">
-        <source src="<?php the_field('video') ?>" type="video/mp4">
-    </video>
+        <img src="<?php the_field('image');?>">
 </header>
 <div class= "contain">
     <main class = "frontPage">
@@ -39,15 +37,14 @@ get_header(); ?>
 
         <div class = "section">
             <h1><?php the_sub_field('section_title'); ?></h1>
-            <div class="sec-image">
-                <img src="<?php the_sub_field('section_image');?>">
-            </div>
-            <div class="sectionInfo">
-
-            
-                
-                <p><?php the_sub_field('section_blurb');?></p>
-                <button class="purple"><a href="<?php the_sub_field('section_link');?>">More</a></button>
+            <div class="sec-contain">
+                <div class="sec-image">
+                    <img src="<?php the_sub_field('section_image');?>">
+                </div>
+                <div class="sec-info">
+                    <p><?php the_sub_field('section_blurb');?></p>
+                    <button class="purple"><a href="<?php the_sub_field('section_link');?>">More</a></button>
+                </div>
             </div>
         </div>
 

@@ -12,19 +12,17 @@ button {
 .videoBackground {
   z-index: -5; }
 
-.videoBackground img{
+.videoBackground img {
   width: 100%;
   height: 100%;
   margin-top: 19%; }
 
 @media screen and (min-width: 768px) {
-  .videoBackground img{
+  .videoBackground img {
     margin-top: 9%; } }
-
 @media screen and (min-width: 1024px) {
   #frontVideo {
     margin-top: 0%; } }
-
 .subForm {
   max-width: 320px;
   margin: 0 auto; }
@@ -61,29 +59,23 @@ td {
   box-sizing: border-box;
   padding: 20px 0; }
 
-@media screen and (min-width: 1400px){
-    .section{
-        width: 75%;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    .sec-contain{
-        display: flex;
-        max-width: 1250px;
-        margin: 0 auto;
-    }
-}
-
+@media screen and (min-width: 1400px) {
+  .section {
+    width: 75%; } }
+@media screen and (min-width: 1024px) {
+  .sec-contain {
+    display: flex;
+    max-width: 1250px;
+    margin: 0 auto; } }
 .sec-image {
   background: none repeat scroll 0 0 black;
-    border-radius: 50%;
-    height: 300px;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    width: 300px;
-    overflow: hidden;  }
+  border-radius: 50%;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  width: 300px;
+  overflow: hidden; }
 
 .sec-image img {
   max-width: 100%;
@@ -92,13 +84,12 @@ td {
 
 .section p {
   text-align: center;
-  padding: 15px; 
+  padding: 15px;
   margin: 0 auto; }
 
-@media screen and (min-width: 1024px){
-    .sec-info{
-        width: 65%;
-        padding: 1%;
-    }
-}
+@media screen and (min-width: 1024px) {
+  .sec-info {
+    width: 65%;
+    padding: 1%; } }
 
+/*# sourceMappingURL=home.css.map */

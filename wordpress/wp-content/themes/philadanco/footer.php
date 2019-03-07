@@ -1,7 +1,7 @@
  <footer>
      <?php wp_footer(); ?> 
         <div class="logo">
-            <img src=<?php echo get_template_directory_uri() . "/dist/img/logo_white.svg" ?> alt="logo">
+            <a href="<?php echo home_url();?>"><img src=<?php echo get_template_directory_uri() . "/dist/img/logo_white.svg" ?> alt="logo"></a>
         </div>
         <nav>
             
@@ -34,11 +34,9 @@
 
 
         <div class="mailing-list">
-            <h5>Join Our Mailing List</h5>
-            <form>
-                <input type="text">
-               <button class="yellow">Send</button>
-            </form>
+            <?php if( function_exists( 'mc4wp_show_form' ) ) {
+                mc4wp_show_form( 295 );
+            } ?>
         </div>
         <div class="copyright">
             <p>Copyright 2009-2018, PHILADANCO! All Rights Reserved</p>

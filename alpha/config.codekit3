@@ -1702,6 +1702,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/scss/education.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/scss/education-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/src/scss/education.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1738,6 +1748,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/scss/home.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/scss/home-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/src/scss/home.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1751,6 +1771,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/scss/imports/footer.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/scss/imports/footer-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/src/scss/imports/footer.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1763,6 +1793,16 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/src/scss/imports/header.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/scss/imports/header-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/src/scss/imports/header.scss": {
 		"aP": 0,
@@ -1802,6 +1842,16 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/src/scss/imports/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/scss/imports/styles-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/src/scss/imports/styles.scss": {
 		"aP": 0,

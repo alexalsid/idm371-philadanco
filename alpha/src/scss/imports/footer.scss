@@ -3,7 +3,14 @@ color: white;}
 
 
 footer {background-color: $darkpurple-2;
-padding: 20px;}
+padding: 20px;
+width: 100%;
+
+
+
+
+
+}
 
 footer a, footer ul, footer input {display: block;
 margin: 20px auto;}
@@ -61,4 +68,6 @@ footer button {
         grid-column: 1/4;}
 
 }
+
+
 
