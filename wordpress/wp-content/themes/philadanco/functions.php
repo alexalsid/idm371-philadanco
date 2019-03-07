@@ -32,6 +32,10 @@ function load_theme_assets() {
        wp_enqueue_style('mtt', get_template_directory_uri() . '/dist/css/meet-philadanco.css');
 
 
+   } else if (is_page('Philadelpha-School-of-Dance-Arts')) {
+       wp_enqueue_style('mtt', get_template_directory_uri() . '/dist/css/psda.css');
+
+
    }
 }
 

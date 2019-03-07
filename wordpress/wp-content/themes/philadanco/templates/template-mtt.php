@@ -14,14 +14,14 @@ get_header(); ?>
                <h2>Joan Meyers Brown</h2>
                <h3>Founder</h3>
             
-              <img src='https://placehold.it/300x500' alt=''/>
+              <img src='<?php the_field('joan_photo')?>' alt=''/>
 
             </div>
             <div class="dl card">
                 <h2>Donald Lunsford</h2>
                 <h3>Director of D/2 Apprentice Company</h3>
                 <p></p>
-                <img src='https://placehold.it/300x500' alt='' />
+                <img src='<?php the_field('donald_photo')?>' alt='' />
 
             </div>
 
@@ -37,27 +37,24 @@ if( have_rows('dancers') ):
     while ( have_rows('dancers') ) : the_row(); ?>
 
     <div class="bio-card card">
-                <h2><?php the_sub_field('dancer_name'); ?></h2>
-                <h4><?php the_sub_field('dancer_home'); ?></h4>
-                <img src='<?php the_sub_field('dancer_image'); ?>' alt='' />
+                <h2>"<?php the_sub_field('dancer_name'); ?>"</h2>
+                <h4>"<?php the_sub_field('dancer_home'); ?>"</h4>
+               <div> <img src="<?php the_sub_field('dancer_image'); ?>" alt='' /></div>
                 <button class="card-scroll-btn"></button>
     
             </div>
 
-        
+        </div>
 
     <?php endwhile; ?>
 
 <?php else : ?>
 
-    // no rows found
+    
 
 <?php endif; ?>
 
-
-            
-
-        </div>
+        
         <div class="bod card">
 <?php
         // check if the repeater field has rows of data

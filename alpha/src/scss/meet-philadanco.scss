@@ -11,8 +11,21 @@ justify-content: center;
 text-align: center;
 margin: 30px 0;
 
+.bio-card {
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
 img {display: block;
-margin: 0 auto;}
+margin: 0 auto;
+width: auto;
+height: auto;
+min-width: 100%;
+min-height: 100%;
+}
 
 
 button {

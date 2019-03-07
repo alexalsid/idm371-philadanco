@@ -1,5 +1,11 @@
 <?php
 
+/* 
+
+Template Name: About
+
+*/
+
   //response generation function
   $response = "";
 

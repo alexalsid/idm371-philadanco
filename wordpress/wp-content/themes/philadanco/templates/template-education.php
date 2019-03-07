@@ -1,20 +1,14 @@
-
 <?php 
-
-/*
-Template Name: education
-*/
-
-get_header(); 
-
-get_template_part('hero')
-
-
-?>
-
-
-
-
+   /*
+   Template Name: education
+   */
+   
+   get_header(); 
+   
+   get_template_part('hero')
+   
+   
+   ?>
 
 <main>
    <section class="links">
@@ -70,7 +64,5 @@ get_template_part('hero')
       </div>
    </section>
 </main>
-
-
 
 <?php get_footer();?>

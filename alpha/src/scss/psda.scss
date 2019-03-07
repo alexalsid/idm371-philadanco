@@ -1,0 +1,109 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.links {
+	text-align: center;
+	padding-bottom: 3rem;
+}
+
+.age {
+	display: inline;
+	margin: 5rem;
+}
+
+.course-links-container {
+	display: inline-block;
+	line-height: 1.9;
+	text-align: left;
+}
+
+.intro {
+	width: 900px;
+	padding: 1rem;
+	margin: 0 auto;
+	flex: 50%;
+}
+
+.class-desc {
+	padding-bottom: 5rem;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+li {
+	font-family: "Avenir Next", Avenir, san-serif;
+	line-height: 2;
+}
+
+.classes-container {
+	padding: 2rem 1rem 3rem;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.text-column {
+	float: left;
+	width: 66.66666%;
+	padding: 20px;
+}
+
+.pic-column {
+	float: left;
+	width: 33.33333%;
+	padding: 20px;
+}
+
+.age-class {
+	padding-bottom: 1.25rem;
+}
+
+.class-desc {
+	padding-bottom: 1.5rem;
+}
+
+
+.purple {
+	color: white;
+	border-radius: 10px;
+	border: none;
+	padding: 14px 36px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .pic-column, .text-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro {
+  	width: 100%;
+  }
+
+  img {
+    margin: auto;
+  }
+
+  .age {
+  	display: block;
+  	margin: 1rem;
+  }
+}

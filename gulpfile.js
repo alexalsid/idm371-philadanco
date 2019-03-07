@@ -82,6 +82,10 @@ gulp.task("move", function () {
         .pipe(sass()) // Converts Sass to CSS with gulp-sass
         .pipe(gulp.dest('wordpress/wp-content/themes/philadanco/dist/css'));
 
+    gulp.src('alpha/src/scss/psda.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('wordpress/wp-content/themes/philadanco/dist/css'));
+
     return gulp.src('alpha/src/scss/main.scss')
         .pipe(sass()) // Converts Sass to CSS with gulp-sass
         .pipe(gulp.dest('wordpress/wp-content/themes/philadanco/dist/css'));

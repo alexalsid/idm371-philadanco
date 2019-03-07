@@ -1,56 +1,85 @@
-html {
-	scroll-behavior: smooth;
+* {
+  box-sizing: border-box; /* image will format on side of text */
 }
 
-.links {
-	text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
 .course-links-container {
-	display: inline-block;
-	line-height: 1.9;
-	text-align: left;
+  display: inline-block;
+  line-height: 1.9;
+  text-align: left;
+}
+
+#course-h3 {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+#course-img {
+  margin-left: 30%;
+  min-width: 100%;
 }
 
 .intro {
-	width: 900px;
-	padding: 1rem;
-	margin: 0 auto;
+  width: 900px;
+  padding: 1rem 0 3.5em;
+  margin: 0 auto;
 }
 
-#swirl-container {
-	text-align: center;
-	padding: 3rem 0;
+/*#swirl-container {
+  text-align: center;
+  padding: 3rem 0;
 }
-
-.classes {
-	padding: 0 4rem;
-}
-
+*/
 .classes-container {
-	display: block;
-	padding: 2rem 0;
-	margin: 0;
+  padding: 2rem 1rem 3rem;
 }
 
-.class-desc {
-	padding-bottom: 5rem;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-h1{
-	text-transform: uppercase;
+.text-column {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
 }
 
-h3 {
-	padding-bottom: 1em;
+.pic-column {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
 }
 
-.classes img {
-
-	display: block;
-	height: 325px;
-	width: auto;
-	padding: 1.5rem;
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
-/*# sourceMappingURL=events.css.map */
+
+@media screen and (max-width: 1024px) {
+  .text-column, .pic-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #course-img {
+    margin-left: 0;
+  }
+
+  img {
+    margin: auto;
+  }
+}

@@ -1,10 +1,7 @@
 <?php 
-
 /*
 Template Name: homepage
 */
-
-
 get_header(); ?>
 
 <header id = "videoBackground">
@@ -31,7 +28,6 @@ get_header(); ?>
 
 
     <?php if( have_rows('sections') ):
-
  	// loop through the rows of data
     while ( have_rows('sections') ) : the_row(); ?>
 
