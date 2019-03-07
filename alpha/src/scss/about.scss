@@ -49,6 +49,13 @@ h2 {
 form span {
   color: red; }
 
+.display_flex {
+  display: flex;
+  flex-direction: rows; }
+
+#respond p {
+  margin: 0 auto; }
+
 @media screen and (min-width: 40rem) {
   main .contact {
     width: 70%; }
