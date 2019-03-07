@@ -13,7 +13,9 @@ get_template_part('hero')
 
 
 <main>
-
+<div class="about-title">
+    <h3>About Philadanco</h3>
+</div>
 <div class="intro"><p><?php the_field('about_intro')?></p></div>
 
 <div class="meet-team">
@@ -31,7 +33,7 @@ get_template_part('hero')
 
 <blockquote><?php the_field('about_quote') ?></blockquote>
 <p><?php the_field('history_paragraph') ?></p>
-<img src="<?php the_field('about_image')?>" alt="">
+<img class="about-history-img" src="<?php the_field('about_image')?>" alt="">
 <p><?php the_field('history_paragraph_2') ?></p>
 
 

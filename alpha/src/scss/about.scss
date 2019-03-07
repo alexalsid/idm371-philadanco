@@ -16,6 +16,53 @@ main .contact, .meet-team {
     margin: 0 auto;
 }
 
+main{
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 990px) {
+    main{
+        max-width: 770px;
+    }
+}
+
+.about-title{
+    margin: 0 auto;
+    color: black;
+}
+
+.p1{
+    font-size: .875rem;
+}
+
+p, blockquote{
+    width: 85%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-history-img{
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+#respond{
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1rem;
+}
+
+.intro p{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
 .meet-team  h3 {
     text-align: center;
 
