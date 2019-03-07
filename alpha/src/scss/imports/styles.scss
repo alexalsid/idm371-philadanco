@@ -250,13 +250,13 @@ button.white:focus {
 $form-transition: all .3s;
 
 
-input, textarea, .checkmark {transition: $form-transition;
+input, textarea, .checkmark, input[type="email"] {transition: $form-transition;
 }
 
-input, textarea {margin: 20px 0;}
+input, textarea, input[type="email"] {margin: 20px 0;}
 
 
-input[type="text"], textarea {
+input[type="text"], textarea, input[type="email"] {
     background-color: $lightgrey;
     border: none;
     border-radius: 5px;
@@ -269,13 +269,18 @@ input[type="text"], textarea {
     display: block;
 }
 
-input[type="text"]:hover, textarea:hover  {
+input[type="text"]:hover, textarea:hover, input[type="email"]:hover  {
    opacity: .7;
 }
 
-input[type="text"]:focus, textarea:focus {
+input[type="text"]:focus, textarea:focus, input[type="email"]:focus {
     border: solid 1px rgba(17, 17, 17, 1);
     outline: none;
+}
+
+input[type="email"] {
+  margin: 20px auto;
+  text-align: center;
 }
 
 .check-container {
