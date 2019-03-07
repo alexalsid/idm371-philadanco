@@ -57,9 +57,12 @@
 ?>
 
 <main>
-<div class="intro">
-    <p><?php the_field('about_intro')?></p>
+
+<div class="about-title">
+    <h3>About Philadanco</h3>
 </div>
+<div class="intro"><p><?php the_field('about_intro')?></p></div>
+
 
 <div class="meet-team">
     <img srcset="<?php the_field('meet_team')?>" alt="">
@@ -72,6 +75,7 @@
 
 
 <div class="history">
+
     <blockquote><?php the_field('about_quote')?></blockquote>
     <div class="columns">
         <p><?php the_field('history_paragraph')?></p>

@@ -4,11 +4,62 @@
   margin: 0 0 10px 40px; }
 
 main .contact, .meet-team {
-  width: 95%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  padding: 15px;
-  box-sizing: border-box;
-  margin: 0 auto; }
+    width: 95%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+main{
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 990px) {
+    main{
+        max-width: 770px;
+    }
+}
+
+.about-title{
+    margin: 0 auto;
+    color: black;
+}
+
+.p1{
+    font-size: .875rem;
+}
+
+p, blockquote{
+    width: 85%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-history-img{
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+#respond{
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1rem;
+}
+
+.intro p{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+.meet-team  h3 {
+    text-align: center;
 
 .meet-team h3 {
   text-align: center; }
