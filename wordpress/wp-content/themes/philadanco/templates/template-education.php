@@ -13,15 +13,18 @@
 <main>
    <section class="links">
       <h3 style="text-align: center; font-weight: bold;"><?php the_field('select_course')?></h3>
-      <img src="<?php echo get_template_directory_uri() . '/dist/img/four.jpg'?>" width="400" alt="">
-      <div class="course-links-container">
-         <h4 class="course-links"><a href="#instruction"><?php the_field('course_links_1')?></a></h4>
-         <h4 class="course-links"><a href="#arts"><?php the_field('course_links_2')?></a></h4>
-         <h4 class="course-links"><a href="#summer"><?php the_field('course_links_3')?></a></h4>
-         <h4 class="course-links"><a href="psda.html"><?php the_field('course_links_4')?></a></h4>
-         <h4 class="course-links"><a href="#d2"><?php the_field('course_links_5')?></a></h4>
-         <h4 class="course-links"><a href="#d3"><?php the_field('course_links_6')?></a></h4>
-      </div>
+
+      <div class="edu-links-flex">
+        <img class="edu-classes-img" src="<?php echo get_template_directory_uri() . '/dist/img/four.jpg'?>" width="400" alt="">
+        <div class="course-links-container">
+            <h4 class="course-links"><a href="#instruction"><?php the_field('course_links_1')?></a></h4>
+            <h4 class="course-links"><a href="#arts"><?php the_field('course_links_2')?></a></h4>
+            <h4 class="course-links"><a href="#summer"><?php the_field('course_links_3')?></a></h4>
+            <h4 class="course-links"><a href="psda.html"><?php the_field('course_links_4')?></a></h4>
+            <h4 class="course-links"><a href="#d2"><?php the_field('course_links_5')?></a></h4>
+            <h4 class="course-links"><a href="#d3"><?php the_field('course_links_6')?></a></h4>
+        </div>
+    </div>
    </section>
 
    <section class="intro">

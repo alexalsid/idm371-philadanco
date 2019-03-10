@@ -6,10 +6,26 @@ html {
   scroll-behavior: smooth;
 }
 
+main{
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 990px) {
+  main{
+      max-width: 770px;
+  }
+}
+
+.edu-classes-img{
+  display: block;
+}
+
 .course-links-container {
   display: inline-block;
   line-height: 1.9;
   text-align: left;
+  max-width: 400px;
 }
 
 #course-h3 {
@@ -34,8 +50,17 @@ html {
   padding: 3rem 0;
 }
 */
+#swirl-container{
+  margin: 0 auto;
+}
+
 .classes-container {
   padding: 2rem 1rem 3rem;
+}
+
+.edu-links-flex{
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .row:after {
