@@ -1,6 +1,11 @@
-<?php get_header(); /*
+<?php get_header(); 
+
+
+/*
 Template Name: Donate
-*/?>
+*/
+
+?>
 <body>
     <header>
     	<!-- swap out img -->
