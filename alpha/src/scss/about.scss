@@ -22,13 +22,18 @@ main{
     }
 }
 
+.contact{
+  margin: 4vw auto 8vw auto;
+}
+
 .about-title{
     margin: 0 auto;
     color: black;
 }
 
-.p1{
+.p{
     font-size: .875rem;
+    line-height: 1.5;
 }
 
 p, blockquote{
@@ -36,6 +41,10 @@ p, blockquote{
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.history blockquote{
+  margin: 2.5rem auto;
 }
 
 .about-history-img{
@@ -74,10 +83,14 @@ button {
 h2 {
   text-align: center; }
 
-.history {
-  margin-left: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%; }
+.history{
+  margin-top: 3rem;
+}
+
+// .history {
+//   margin-left: 5%;
+//   margin-top: 10%;
+//   margin-bottom: 10%; }
 
 .info {
   margin-bottom: 10%; }

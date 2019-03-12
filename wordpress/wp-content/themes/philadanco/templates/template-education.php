@@ -43,8 +43,8 @@
       </div>
 
       <div class="classes-container">
+        <h3 id="arts">Arts in Education and Community</h3>
          <img src="<?php echo get_template_directory_uri() . '/dist/img/education-img2.jpg'?>"  alt="placeholder" style="float: left; padding: 0 3rem;">
-         <h3 id="arts">Arts in Education and Community</h3>
          <p class="class-desc"><?php the_field('arts_paragraph')?></p>
       </div>
 
@@ -55,8 +55,8 @@
       </div>
 
       <div class="classes-container">
+        <h3 id="d2">D/2 Apprentice Company</h3>
          <img src="<?php echo get_template_directory_uri() . '/dist/img/d2.jpg'?>"  alt="placeholder" style="float: left; padding: 0 3rem;">
-         <h3 id="d2">D/2 Apprentice Company</h3>
          <p class="class-desc"><?php the_field('d2_paragraph')?></p>
       </div>
 
