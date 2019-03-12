@@ -17,15 +17,29 @@ main{
   }
 }
 
+p{
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.intro p{
+  font-size: 1rem;
+}
+
 .edu-classes-img{
   display: block;
+  max-width: 300px;
+  max-height: 240px;
 }
 
 .course-links-container {
   display: inline-block;
   line-height: 1.9;
   text-align: left;
-  max-width: 400px;
+  max-width: 300px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #course-h3 {
@@ -53,6 +67,9 @@ main{
 #swirl-container{
   margin: 0 auto;
 }
+#swirl-containter img{
+  margin: 0 auto;
+}
 
 .classes-container {
   padding: 2rem 1rem 3rem;
@@ -61,6 +78,8 @@ main{
 .edu-links-flex{
   display: flex;
   flex-flow: row wrap;
+  max-width:620px;
+  margin: 0 auto;
 }
 
 .row:after {
@@ -87,7 +106,12 @@ img {
   max-width: 100%;
 }
 
-
+@media screen and (min-width: 587px){
+  .course-links-container{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 @media screen and (max-width: 1024px) {
   .text-column, .pic-column {
     width: 100%;
@@ -106,5 +130,14 @@ img {
 
   img {
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 645px){
+  .classes-container p{
+    max-width: 48%;
+  }
+  .classes-container img{
+    max-width: 48%;
   }
 }
