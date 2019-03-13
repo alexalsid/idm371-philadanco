@@ -37,11 +37,16 @@ get_header(); ?>
     </div>
    
     <div class="center">
-        <h2>Stay up to date on all of Philadanco's events:</h2>
+        <div class="mailing-list-events">
+        <?php if( function_exists( 'mc4wp_show_form' ) ) {
+            mc4wp_show_form( 295 );
+        } ?>
+        </div>
+<!--         <h2>Stay up to date on all of Philadanco's events:</h2>
         <h2 class="bold">Join our mailing list</h2>
         <div class="display_flex sign-up">
             <input class="events-form" type="text"> <button class="yellow">sign up</button>
-        </div>
+        </div> -->
     </div>
 
     <h2>Philadanco in the News</h2>
