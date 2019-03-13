@@ -5,6 +5,10 @@ input, button {
 header {
   background-image: linear-gradient(#000, #fff); }
 
+@media screen and(min-width: 1056px){
+  header {background-image: linear-gradient(#000 50%, #fff);}
+}
+
 main{
   background-image: linear-gradient(black, white);
   // width: 100%;
@@ -13,6 +17,8 @@ main{
 }
 
 #donate-main-img {
+  max-width: 1056px;
+  margin: 0 auto;
   max-height: 100vh;
   }
 
@@ -129,6 +135,19 @@ ul li::before {
   font-size: 1em; }
 
 
+.icons p{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.icons img{
+  max-width: 150px;
+}
+
+
 @media (min-width: 650px) {
   main{
     margin-top: -5.5rem;
@@ -179,7 +198,7 @@ ul li::before {
 @media (min-width: 1000px){
   .overlap {
     position: absolute;
-    top: 10%;
+    top: 16%;
     left: 35%;}
   #form{
     background-color: rgba(255, 255, 255, .8)

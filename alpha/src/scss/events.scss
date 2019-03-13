@@ -16,6 +16,14 @@
 	margin-top: 10%;
 }
 
+.info{
+	padding: .5rem;
+}
+
+.info h3{
+	font-size: 1.125rem;
+}
+
 #events-pic {
 	width: 100%;
 }
@@ -98,6 +106,7 @@
 text-align: center;
 grid-template-rows: 1fr 1fr;
 overflow: hidden;
+margin: 1rem;
 box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
 
 .article button {
