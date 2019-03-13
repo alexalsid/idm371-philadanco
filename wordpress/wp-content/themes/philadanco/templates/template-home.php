@@ -17,11 +17,15 @@ get_header(); ?>
         </div>
 
         <div>
-            <h4>Stay Updated on All Philadanco Events</h4>
+            <div class="mailing-list center">
+            <?php if( function_exists( 'mc4wp_show_form' ) ) {
+                mc4wp_show_form(295);
+            } ?>
+            <!-- <h4>Stay Updated on All Philadanco Events</h4>
             <form class = "subForm">
                 <input type="text" placeholder="janedoe@example.com">
                 <button class="purple">Go</button>
-            </form>
+            </form> -->
         </div>
 
         <div class="sections">
