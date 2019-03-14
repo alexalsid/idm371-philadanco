@@ -55,9 +55,9 @@ Template Name: Donate
 
             <div class="supporters">
                 <h2>Philadanco has been made possible in part by:</h2>
-                <?php if( have_rows('supporters') ):
+                <?php if( have_rows('supporters') ): ?>
                     <div class="icons">
-                    while ( have_rows('supporters') ) : the_row(); ?>
+                    <?php while ( have_rows('supporters') ) : the_row(); ?>
                         <img src="<?php the_sub_field('supporter')?>" alt="">
                     <?php endwhile; ?>
                     </div>

@@ -210,7 +210,7 @@ ul li::before {
   .overlap {
     left: 35%; }
   .icons {
-    display: row;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 1%;
     grid-row-gap: 3%; } }
