@@ -38,33 +38,44 @@
    <section class="classes">
       <div class="classes-container">
          <h3 id="instruction">Instruction and Training Program</h3>
-         <img src="<?php echo get_template_directory_uri() . '/dist/img/education-img.jpg'?>" alt="placeholder" style="float: right;">
+         <div class="inside-class-container">
          <p class="class-desc"><?php the_field('instruction_paragraph')?></p>
+         <img src="<?php the_field('edu-img1')?>" alt="" style=>
+</div>
       </div>
 
       <div class="classes-container">
         <h3 id="arts">Arts in Education and Community</h3>
-         <img src="<?php echo get_template_directory_uri() . '/dist/img/education-img2.jpg'?>"  alt="placeholder" style="float: left; padding: 0 3rem;">
+        <div class="inside-class-container">
+        <img src="<?php the_field('edu-img2')?>" alt="" >
          <p class="class-desc"><?php the_field('arts_paragraph')?></p>
+</div>
       </div>
 
       <div class="classes-container">
          <h3 id="summer">Summer Training Program</h3>
-         <img src="<?php echo get_template_directory_uri() . '/dist/img/education-img3.jpg'?>" alt="placeholder" style="float: right;">
+         <div class="inside-class-container">
          <p class="class-desc"><?php the_field('summer_paragraph')?></p>
+         <img src="<?php the_field('edu-img3')?>" alt="">
+         
+</div>
       </div>
 
       <div class="classes-container">
         <h3 id="d2">D/2 Apprentice Company</h3>
-         <img src="<?php echo get_template_directory_uri() . '/dist/img/d2.jpg'?>"  alt="placeholder" style="float: left; padding: 0 3rem;">
+        <div class="inside-class-container">
+        <img src="<?php the_field('edu-img4')?>" alt="" >
          <p class="class-desc"><?php the_field('d2_paragraph')?></p>
+</div>
       </div>
 
       <div class="classes-container">
          <h3 id="d3">D/3 Youth Ensemble</h3>
-         <img src="<?php echo get_template_directory_uri() . '/dist/img/d3.jpg'?>" alt="placeholder" style="float: right;">
+         <div class="inside-class-container">
          <p class="class-desc"><?php the_field('d3_paragraph')?></p>
+         <img src="<?php the_field('edu-img5')?>" alt="">
       </div>
+</div>
    </section>
 </main>
 

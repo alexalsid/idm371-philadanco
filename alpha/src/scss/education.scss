@@ -75,6 +75,22 @@ p{
   padding: 2rem 1rem 3rem;
 }
 
+.classes-container img{
+  margin-bottom: .5rem;
+}
+
+.inside-class-container{
+  display: flex;
+  flex-flow: row wrap;
+  max-height: 350px;
+  max-width: 100%;
+}
+
+.inside-class-container img{
+  max-width: 100%;
+  max-height: 350px;
+}
+
 .edu-links-flex{
   display: flex;
   flex-flow: row wrap;
@@ -135,9 +151,9 @@ img {
 
 @media screen and (min-width: 645px){
   .classes-container p{
-    max-width: 48%;
+    max-width: 350px;
   }
   .classes-container img{
-    max-width: 48%;
+    max-width: 350px;
   }
 }
