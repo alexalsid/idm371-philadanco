@@ -33,7 +33,7 @@ function load_theme_assets() {
        wp_enqueue_script('main', get_template_directory_uri() . '/dist/js/team.js');
 
 
-   } else if (is_page('Philadelpha-School-of-Dance-Arts')) {
+   } else if (is_page('PSDA')) {
        wp_enqueue_style('psda', get_template_directory_uri() . '/dist/css/psda.css');
 
 
