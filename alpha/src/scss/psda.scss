@@ -43,8 +43,10 @@ li {
 }
 
 .classes-container {
-	padding: 2rem 1rem 3rem;
-}
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 50px auto;
+  box-sizing: border-box;
+  padding: 20px 0; }
 
 .row:after {
 	content: "";
@@ -70,6 +72,7 @@ li {
 
 .class-desc {
 	padding-bottom: 1.5rem;
+	text-align: left;
 }
 
 
