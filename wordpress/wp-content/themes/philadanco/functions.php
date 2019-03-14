@@ -30,7 +30,7 @@ function load_theme_assets() {
 
    } else if (is_page('Meet-Philadanco')) {
        wp_enqueue_style('mtt', get_template_directory_uri() . '/dist/css/meet-philadanco.css');
-       wp_enqueue_script('main', get_template_directory_uri() . '/dist/js/team.js');
+       wp_enqueue_script('team', get_template_directory_uri() . '/dist/js/team.js');
 
 
    } else if (is_page('PSDA')) {
