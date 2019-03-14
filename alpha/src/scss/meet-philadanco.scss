@@ -4,20 +4,16 @@ main {display: grid;
 
 
 
+
+
 .card {width: 100%;
  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
 display: grid;
 justify-content: center;
 text-align: center;
-margin: 30px 0;
+margin: 0;
 
-.bio-card {
-    width: 60%;
-    height: 300px;
-    margin: 0 auto;
-    overflow: hidden;
 
-}
 
 img {display: block;
 margin: 0 auto;
@@ -28,33 +24,125 @@ min-height: 100%;
 }
 
 
-button {
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+.top {
+
+
+    .card {
+        grid-template-columns: 1fr 1fr;
+        height: 300px;
+        overflow: hidden;
+        margin: 0 0 30px 0;
+
+        >div {
+            display: grid;
+            align-items: center;
+            
+
+            >div {
+                height: auto;
+            }
+        }
+
+    
+
+    
+    }
+
+}
+
+.dancers {
+    margin: 30px 0;
+}
+
+
+
+.card-cont {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    button {
     height: 50px;
     width: 50px;
     background-color: #7927A1;
-    padding: 0;
     border-radius: 50%;
     border: none;
     display: block;
-    margin: 0 auto;
-    transform: translateY(25px);
-    background-image: url(../../src/img/arrow-down.svg);
+    background-image: url(http://alsid.design/idm371-philadanco/wordpress/wp-content/themes/philadanco/dist/img/arrow_down.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 75%;
+    background-size: 45%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -5%;
+    z-index: 10000;
+}
+
 }
 
 
-}
 
 .bio-card {
     background-image: url(../../src/img/s1.svg);
     background-repeat: no-repeat;
     background-position: center;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bio-cont {
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background-color: rgba(100, 0, 141, 1);
+    padding: 15px;
+    bottom: -100%;
+    overflow: auto;
+
+    p {
+        text-align: left;
+        color: white;
+        line-height: 1.7em;
+    }
+
 }
 
 
+
+.dancer-img {
+    height: 350px;
+    width: 200px;
+    overflow: hidden;
+    margin: 0 auto;
 }
+
+.dancer-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
 
 @media screen and (min-width: 46rem) {
     .dancers, .bod {
@@ -96,4 +184,26 @@ button {
 
 
     
+}
+
+@keyframes show-card {
+
+    from {bottom: -100%;}
+    to {bottom: 0;}
+}
+
+@keyframes hide-card {
+
+    from {bottom: 0;}
+    to {bottom: -100%;}
+}
+
+.show {
+    animation: show-card 1s forwards;
+}
+
+.hide {
+
+    animation: hide-card 1s forwards;
+
 }
