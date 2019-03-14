@@ -2,20 +2,20 @@
 
 .container {margin-top: 10px;}
 
-main {margin: 15px;
+main {margin: 0 15px;
 max-width: 122.5rem;
 padding: 15px;}
 
 @media screen and (min-width: 31.25rem) {
-    main {margin: 30px;}
+    main {margin: 0 30px;}
 }
 
 @media screen and (min-width: 56.25rem) {
-    main {margin: 40px;}
+    main {margin: 0 40px;}
 }
 
 @media screen and (min-width: 122rem) {
-    main {margin: 40px auto;}
+    main {margin: 0 auto;}
 }
 
 
