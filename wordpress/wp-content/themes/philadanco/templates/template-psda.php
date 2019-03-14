@@ -22,10 +22,12 @@
   <section class="intro">      
    <p><?php the_field('psda_intro')?></p>  
       <p>The Philadelphia School of Dance Arts features:
-         <li><?php the_field('psda_features1')?></li>
-         <li><?php the_field('psda_features2')?></li>
-         <li><?php the_field('psda_features3')?></li>
-         <li><?php the_field('psda_features4')?></li>
+         <ul>
+           <li><?php the_field('psda_features1')?></li>
+           <li><?php the_field('psda_features2')?></li>
+           <li><?php the_field('psda_features3')?></li>
+           <li><?php the_field('psda_features4')?></li>
+          </ul>
        </p>
     <p><?php the_field('psda_intro_2')?></p>
 
@@ -41,10 +43,10 @@
             <?php the_field('predance_info')?></p>
             <h4 class="class-type">Acrobats/Gymnastics</h4>
               <p class="class-desc"><?php the_field('acrobats_info')?></p>
-            <button class="purple">Registration Form</button>
+            <button class="purple">Register</button>
         </div>
       <div class="pic-column">
-          <img src="<?php echo get_template_directory_uri() . '/dist/img/psda-img.jpg'?> alt="">
+          <img src="<?php the_field('four_five_img')?>" alt="">
       </div>
     </div>
   </div>
@@ -52,7 +54,7 @@
   <div class="classes-container">
     <div class="row">
       <div class="pic-column">
-        <img src="img/psda-img3.jpg" alt="">
+        <img src="<?php the_field('seven_plus_img')?>" alt="">
       </div>
       <div class="text-column">
         <h2 class="age-class" id="7to10">Ages 7 years and older</h2>
@@ -65,7 +67,7 @@
             <h4 class="class-type">Tap</h4>
               <p class="class-desc">
                <?php the_field('tap_info')?></p>
-            <button class="purple">Registration Form</button>
+            <button class="purple">Register</button>
       </div>
     </div>
   </div>
@@ -79,10 +81,10 @@
             <h4 class="class-type">Hip Hop and Modern Dance (Horton)</h4>
               <p class="class-desc">
                <?php the_field('hiphop_info')?></p>
-            <button class="purple">Registration Form</button>
+            <button class="purple">Register</button>
         </div>
       <div class="pic-column">
-          <img src="img/psda-img2.jpg" alt="">
+          <img src="<?php the_field('ten_plus_img')?>" alt="">
       </div>
     </div>
   </div>
@@ -91,12 +93,12 @@
     <div class="classes-container">
     <div class="row">
       <div class="pic-column">
-        <img src="img/psda-img4.jpg" alt="">
+        <img src="<?php the_field('adult_img')?>" alt="">
       </div>
       <div class="text-column">
         <h2 class="age-class" id="adult">Adult</h2>
           <p class="class-desc"><?php the_field('adult_info')?></p>
-        <button class="purple">Registration Form</button>
+        <button class="purple">Register</button>
       </div>
     </div>
   </div>
