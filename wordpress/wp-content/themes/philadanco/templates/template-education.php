@@ -20,7 +20,7 @@
             <h4 class="course-links"><a href="#instruction"><?php the_field('course_links_1')?></a></h4>
             <h4 class="course-links"><a href="#arts"><?php the_field('course_links_2')?></a></h4>
             <h4 class="course-links"><a href="#summer"><?php the_field('course_links_3')?></a></h4>
-            <h4 class="course-links"><a href="psda.html"><?php the_field('course_links_4')?></a></h4>
+            <h4 class="course-links"><a href="<?php the_field('school_link')?>"><?php the_field('course_links_4')?></a></h4>
             <h4 class="course-links"><a href="#d2"><?php the_field('course_links_5')?></a></h4>
             <h4 class="course-links"><a href="#d3"><?php the_field('course_links_6')?></a></h4>
         </div>
