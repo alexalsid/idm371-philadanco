@@ -214,7 +214,7 @@ button.purple:focus {
 
 button.yellow, input[type="submit"] {
     background-color: $yellow;
-    color: white;
+    color: $grey-2;
     margin: 0 auto;
 }
  button.yellow:hover {

@@ -102,3 +102,9 @@ remove_action( 'charitable_campaign_summary', 'charitable_template_campaign_dono
 }
 
 add_action( 'after_setup_theme', 'ed_unhook_default_template_functions', 11 );
+
+function ed_charitable_set_default_donation_amount( $amount ) {
+    // default donation amount.
+  return 15;
+}
+add_filter( 'charitable_default_donation_amount', 'ed_charitable_set_default_donation_amount' );

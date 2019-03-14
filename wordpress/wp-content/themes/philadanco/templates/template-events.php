@@ -24,7 +24,7 @@ get_header(); ?>
                     <h2 class="event-dates hyphen">-</h2>
                     <h2 class="event-dates"><span class="event-h2" id="span-day"><?php the_field('end_day')?></span><br>
                     <?php the_field('end_date')?></h2>
-                    <button class="purple"><a href="<?php the_field('ticket_link')?>">Tickets</a></button>
+                    <button class="purple"><a href="<?php the_field('ticket_link')?>" target="">Tickets</a></button>
                 </div>
                 <div class="center-upcoming-events">
                     <h2 class="event-h2"><?php the_field('next_event')?></h2>

@@ -13,7 +13,7 @@ get_header(); ?>
         <h1><?php the_field('event_title')?></h1>
         <h3 style ="color: #470078"><?php the_field('event_date')?></h3>
         <div class="tickets">
-            <button class="purple"><a href="<?php the_field('tickets_link')?>">Tickets</a></button>
+            <button class="purple"><a href="<?php the_field('tickets_link')?>" target="_blank">Tickets</a></button>
         </div>
 
         <div>
