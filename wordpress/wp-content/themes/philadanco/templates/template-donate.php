@@ -55,9 +55,16 @@ Template Name: Donate
 
             <div class="supporters">
                 <h2>Philadanco has been made possible in part by:</h2>
-                <div class="icons">
-                    <?php echo get_field('supporters'); ?>
-                </div>
+                // check if the repeater field has rows of data
+                <?php if( have_rows('supporters') ):
+                    // loop through the rows of data
+                    while ( have_rows('supporters') ) : the_row(); ?>
+                     <div class="icons">
+                        <img src="<?php the_sub_field('supporter')?>" alt="">
+                    </div>
+                    <?php endwhile; ?>
+                <?php else : ?>
+                <?php endif; ?>
             </div>
         </div>
 
